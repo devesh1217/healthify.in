@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&display=swap');
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  position: absolute;
+  top: 90vh;
+  right: 32vw;
+  color: white;
+}
+body{
+    margin: 0px;
+    /* background-color:  black; */
+    font-family: 'Anek Devanagari', sans-serif;
+    box-sizing: border-box;
+}
+#header-img{
+    background-image: url("Profile Images/profile.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    opacity: 80%;
+    height: 100vh;
+}
+#header-bg{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+nav{
+    color: white;
+    position: absolute;
+    top: 0px;
+    background-color: #00000068;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    z-index: 10;
+}
+#logo{
+    display: inline;
+    justify-self: start;
+    align-self: stretch;
+}
+#logo-img{
+    width: 60px;
+    padding: 10px;
+    float: left;
+    margin: 10px;
+    padding-right: 0;
+    margin-right: 0;
+}
+#name{
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    border-right: 2px white solid;
+}
+nav a{
+    text-decoration: none;
+}
+.menus{
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    display: inline;
+    padding: 0px;
+    margin: 20px;
+    font-size: 20px;
+}
+.menus:hover {
+    border-bottom: 3px white solid;
+}
+.menus:active {
+    border-bottom: 3px white solid;
+}
+#header-text{
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    top: 32vh;
+    right: 10vw;
+    z-index: 2;
+}
+#header-text-bg{
+    font-size: 100px;
+    position: absolute;
+    top: 42vh;
+    right: 9.5vw;
+    background-color: #512bc3a5;
+    width: 640px;
+    height: 40px;
+    z-index: 1;
+    border-radius: 40px;
+}
+#header-text2{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 62vh;
+    right: 21vw;
+    z-index: 2;
+}
+#header-text-bg2{
+    font-size: 100px;
+    position: absolute;
+    top: 66vh;
+    right: 20vw;
+    background-color: #770303a1;
+    width: 280px;
+    height: 20px;
+    z-index: 1;
+    border-radius: 40px;
+}
+main{
+    padding-inline: 10vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+#BMI-bg{
+    font-size: 100px;
+    position: absolute;
+    top: 115vh;
+    left: 9vw;
+    background-color: #86e045a1;
+    width: 480px;
+    height: 40px;
+    z-index: -1;
+    border-radius: 40px;
+}
+#BMI{
+    font-size: 50px;
+}
+#ans-of-how-to{
+    font-size: 22px;
+}
+#BMI-box{
+    margin-inline: 30vw;
+    margin-bottom: 10vh;
+    border: 0.1px solid #9d9d9d;
+    border-radius: 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px 5px rgb(223, 223, 223);
+}
+#BMI-title{
+    font-size: 40px;
+    margin: 1vw;
+}
+#BMI-calc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#BMI-box input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid black;
+    display: inline;
+    margin: 1vw;
+    margin-bottom: 1vw;
+    width: 20vw;
+    font-size: 20px;
+}
+#BMI-box input[type='radio']{
+    margin-inline: 1.5vw;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: fit-content;
+    align-self: flex-start;
+}
+gender{
+    margin: 1vw;
+    width: 20vw;
+    font-size: 20px;
+}
+#BMI-ans,#BMI-result{
+    margin: 1vw;
+    width: 20vw;
+    align-self: start;
+    font-size: 25px;
+}
+hr{
+    width: 80%;
+}
+#scale{
+    width: 80%;
+}
+#line{
+    height: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 0;
+    background: linear-gradient(90deg, rgba(172,0,0,1) 0%, rgba(200,12,0,1) 7%, rgba(255,128,0,1) 7%, rgba(255,128,0,1) 11%, rgba(255,236,10,1) 11%, rgba(254,237,21,1) 16%, rgba(15,161,2,1) 16%, rgba(15,161,2,1) 39%, rgba(254,237,21,1) 39%, rgba(254,237,21,1) 57%, rgba(255,128,0,1) 57%, rgba(255,128,0,1) 75%, rgba(200,12,0,1) 75%, rgba(200,12,0,1) 93%, rgba(99,10,4,1) 93%);
+    border-radius: 2px;
+    width: 100%;
+}
+/* .bmi{
+    position: relative;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+#bmi1{
+    left: 7%;
+}
+#bmi2{
+    left: 11%;
+}
+#bmi3{
+    left: 16%;
+}
+#bmi4{
+    left: 39%;
+}
+#bmi5{
+    left: 57%;
+}
+#bmi6{
+    left: 75%;
+}
+#bmi7{  
+    left: 0%;
+} */
+#pointer{
+    align-self: flex-start;
+    position: relative;
+    left: 30%;
+    font-size: 30px;
+}
+#BMI-bg2{
+    font-size: 100px;
+    position: absolute;
+    top: 227vh;
+    left: 9vw;
+    background-color: #86e045a1;
+    width: 480px;
+    height: 40px;
+    z-index: -1;
+    border-radius: 40px;
+}
