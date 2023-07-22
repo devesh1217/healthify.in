@@ -9,10 +9,10 @@
 </head>
 <body>
     <nav id="nav">
-        <span>
+        <a href="index.html">
             <div id="logo"><img id="logo-img" src="Images/logo.png" alt=""></div>
             <div id="name">Healthify.in</div>
-        </span>
+        </a>
         <a href="index.html" class="menus" id="menu1">Home</a>
         <a href="yoga.html" class="menus" id="menu2">Yoga</a>
         <a href="#" class="menus" id="menu3">Meditaion</a>
@@ -37,27 +37,47 @@
         </div>
     </nav>
     <header>
-        <div id="header-img"></div>
+        <img src="Yoga Images/Yoga-header.jpg" id="header-img"></img>
         <div id="header-bg"></div>
         <div id="header-text">Let's sweat a little</div>
         <div id="header-text-bg"></div>
         <div id="header-text2">Yoga is the best option for that</div>
         <div id="header-text-bg2"></div>
-        <span class="material-symbols-outlined">keyboard_double_arrow_down</span>
+        <a href="#why-yoga" class="material-symbols-outlined">keyboard_double_arrow_down</a>
     </header>
     <main>
         <h1 id="why-yoga">Is Yoga Right for Me?</h1>
-        <div id="normal-text">
+        <div class="normal-text">
             Yoga is in no way exclusive—being able to practice yoga does not matter how old you are, how much you weigh, what you do for a living, where you live, or what religion you practice. Yoga is accessible for just about everyone.
         </div>
-        <div id="normal-text">
+        <div class="normal-text">
             If you have a medical condition or a recent injury, it can be challenging or dangerous to do certain types of yoga, specific poses, or breathing techniques. Usually, there are alternatives or modifications that can allow you to practice safely, and many common complaints have specific yoga therapy remedies. If you are recovering from an injury or are in poor health, we recommended consulting with a physician or other qualified health care professional before beginning yoga.
         </div>
-        <div id="normal-text">
+        <div class="normal-text">
             While you may feel some intensity in the belly of your muscles while in a yoga pose, you should never feel pain, especially in the joints. A sharp or intense pain is your body’s signal to tell you to stop, back off, and take it easy.
         </div>
         <div id="why-bg"></div>
     </main>
+    <div id="yoga-bg"></div>
+    <div id="yoga-box">
+        <div id="yoga-title">The Best For You</div>
+        <div id="yoga-form">
+            <input type="radio" name="level" id="warmup" checked><label type="button" for="warmup">Warm-Up</label>
+            <input type="radio" name="level" id="beginer"><label for="beginer">Beginer</label>
+            <input type="radio" name="level" id="intermediate"><label for="intermediate">Intermediate</label>
+            <input type="radio" name="level" id="advanced" ><label for="advanced">Advanced</label>
+            <button id="filter-btn"><img src="Yoga Images/filter btn.png"></button>
+        </div>
+        <div id="yoga-filters">
+            <span><input type="checkbox" name="filter" id="Standing"><label for="Standing">Standing Pose</label></span>
+            <span><input type="checkbox" name="filter" id="Seated"><label for="Seated">Seated Pose</label></span>
+            <span><input type="checkbox" name="filter" id="Prone"><label for="Prone">Prone Pose</label></span>
+            <span><input type="checkbox" name="filter" id="Supine"><label for="Supine">Supine Pose</label></span>
+            <span><input type="checkbox" name="filter" id="All" checked><label for="All">All</label></span>
+        </div>
+        <div id="yoga-display"></div>
+
+    </div>
     <script src="yoga.js"></script>
 </body>
 </html>
