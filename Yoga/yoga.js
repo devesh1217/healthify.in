@@ -1,4 +1,5 @@
 let favList=JSON.parse(localStorage.getItem('favList'))
+
 document.onscroll=()=>{
     if(document.documentElement.scrollTop==0){
         document.getElementById('nav').style.backgroundColor='transparent';
@@ -14,58 +15,70 @@ function close_menu(){
 }
 
 window.onload=window.onresize=()=>{
+  //setting why-text and its bg
   document.getElementById('why-bg').style.width=document.getElementById('why-yoga').offsetWidth+'px'
   document.getElementById('why-bg').style.top=document.getElementById('why-yoga').offsetTop+parseFloat(window.getComputedStyle(document.getElementById('why-yoga')).fontSize)/1.5+'px'
-  document.getElementById('why-bg').style.height=parseFloat(window.getComputedStyle(document.getElementById('why-yoga')).fontSize)+'px'
-
+  document.getElementById('why-bg').style.left=document.getElementById('why-yoga').offsetLeft+'px'
+  document.getElementById('why-bg').style.height=parseFloat(window.getComputedStyle(document.getElementById('why-yoga')).fontSize)/1.5+'px'
+  
+  //setting header-text and its bg
   document.getElementById('header-text-bg').style.width=document.getElementById('header-text').offsetWidth+'px'
   document.getElementById('header-text-bg').style.top=document.getElementById('header-text').offsetTop+parseFloat(window.getComputedStyle(document.getElementById('header-text')).fontSize)/1.5+'px'
+  document.getElementById('header-text-bg').style.left=document.getElementById('header-text').offsetLeft+'px'
   document.getElementById('header-text-bg').style.height=parseFloat(window.getComputedStyle(document.getElementById('header-text')).fontSize)/2+'px'
-
+  
+  //setting header-text2 and its bg
   document.getElementById('header-text-bg2').style.width=document.getElementById('header-text2').offsetWidth+'px'
-  document.getElementById('header-text-bg2').style.top=document.getElementById('header-text2').offsetTop+parseFloat(window.getComputedStyle(document.getElementById('header-text2')).height)/2.5+'px'
+  document.getElementById('header-text-bg2').style.top=document.getElementById('header-text2').offsetTop+parseFloat(window.getComputedStyle(document.getElementById('header-text2')).height)/2+'px'
+  document.getElementById('header-text-bg2').style.left=document.getElementById('header-text2').offsetLeft+'px'
   document.getElementById('header-text-bg2').style.height=parseFloat(window.getComputedStyle(document.getElementById('header-text2')).fontSize)/2+'px'
   
+  //setting header-img and its bg(black bg)
   document.getElementById('header-bg').style.width=document.getElementById('header-img').offsetWidth+'px'
   document.getElementById('header-bg').style.height=document.getElementById('header-img').offsetHeight+'px'
-
+  
+  //setting filter btns
   document.getElementById('filter-btn').onclick=filterToggle
+  
+  //setting yoga box height
+  document.getElementById('yoga-bg').style.height=document.getElementById('yoga-box').offsetHeight+20+'px'
+
 }
 
 //warmup data
 let warmupData=[{
     name:"Run in Place",
-    link:'Yoga Images/Warmup/warmup1.gif',
+    link:'Warmup/warmup1.gif',
     description:'2 minutes',
     pose: '',
     no: 'warmup-1',
 },{
     name:"Jump Rope",
-    link:'Yoga Images/Warmup/warmup2.gif',
+    link:'Warmup/warmup2.gif',
     description:'2 minutes',
     pose: '',
     no: 'warmup-2',
 },{
     name:"Standing Climber",
-    link:'Yoga Images/Warmup/warmup3.gif',
+    link:'Warmup/warmup3.gif',
     description:'90 seconds',
     pose: '',
     no: 'warmup-3',
 },{
     name:"Finger-Toe Jacks",
-    link:'Yoga Images/Warmup/warmup4.gif',
+    link:'Warmup/warmup4.gif',
     description:'90 seconds',
     pose: '',
     no: 'warmup-4',
 },{
     name:"Inchworms",
-    link:'Yoga Images/Warmup/warmup5.gif',
+    link:'Warmup/warmup5.gif',
     description:'90 seconds',
     pose: '',
     no: 'warmup-5',
 },{
     name:"Knee Circles",
-    link:'Yoga Images/Warmup/warmup6.gif',
+    link:'Warmup/warmup6.gif',
     description:'90 seconds',
     pose: '',
     no: 'warmup-6',
@@ -75,70 +88,70 @@ let warmupData=[{
 let beginerData = [
   {
     name: "Adho Mukha Svanasana",
-    link: "Yoga Images/Beginer/b1.jpg",
+    link: "Beginer/b1.jpg",
     description: "Downward Facing Dog",
     pose: 'Standing',
     no:'beginer-1'
   },
   {
     name: "Tadasana",
-    link: "Yoga Images/Beginer/b2.jpg",
+    link: "Beginer/b2.jpg",
     description: "Mountain pose",
     pose: 'Standing',
     no:'beginer-2'
   },
   {
     name: "Virabhadrasana",
-    link: "Yoga Images/Beginer/b3.jpg",
+    link: "Beginer/b3.jpg",
     description: "Warrior Pose",
     pose: 'Standing',
     no:'beginer-3'
   },
   {
     name: "Trikonasana",
-    link: "Yoga Images/Beginer/b4.jpg",
+    link: "Beginer/b4.jpg",
     description: "Triangle Pose",
     pose: 'Standing',
     no:'beginer-4'
   },
   {
     name: "PadaHastasana",
-    link: "Yoga Images/Beginer/b5.jpg",
+    link: "Beginer/b5.jpg",
     description: "Hand-to-foot pose",
     pose: 'Standing',
     no:'beginer-5'
   },
   {
     name: "Vrikshasana",
-    link: "Yoga Images/Beginer/b6.webp",
+    link: "Beginer/b6.webp",
     description: "Tree pose",
     pose: 'Standing',
     no:'beginer-6'
   },
   {
     name: "Bhujangasan",
-    link: "Yoga Images/Beginer/b7.jpg",
+    link: "Beginer/b7.jpg",
     description: "Cobra Pose",
     pose: 'Prone',
     no:'beginer-7'
   },
   {
     name: "Sukhasana",
-    link: "Yoga Images/Beginer/b8.jpg",
+    link: "Beginer/b8.jpg",
     description: "Easy Pose",
     pose: 'Seated',
     no:'beginer-8'
   },
   {
     name: "Padmasana",
-    link: "Yoga Images/Beginer/b9.jpg",
+    link: "Beginer/b9.jpg",
     description: "Lotus pose",
     pose: 'Seated',
     no:'beginer-9'
   },
   {
     name: "Shavasana",
-    link: "Yoga Images/Beginer/b10.jpg",
+    link: "Beginer/b10.jpg",
     description: "Corpse Pose",
     pose: 'Supine',
     no:'beginer-10'
@@ -149,56 +162,56 @@ let beginerData = [
 let intermediateData = [
     {
       name: "Baddha Konasana",
-      link: "Yoga Images/Intermediate/i1.jpeg",
+      link: "Intermediate/i1.jpeg",
       description: "Butterfly pose",
       pose: 'Seated',
       no:'intermediate-1'
     },
     {
       name: "Uttanapadasana",
-      link: "Yoga Images/Intermediate/i2.jpg",
+      link: "Intermediate/i2.jpg",
       description: "Leg raise pose",
       pose: 'Prone',
       no:'intermediate-2'
     },
     {
       name: "Pavan Muktasana",
-      link: "Yoga Images/Intermediate/i3.jpg",
+      link: "Intermediate/i3.jpg",
       description: "Nose-Knee pose",
       pose: 'Prone',
       no:'intermediate-3'
     },
     {
       name: "Naukasana",
-      link: "Yoga Images/Intermediate/i4.gif",
+      link: "Intermediate/i4.gif",
       description: "Boat pose",
       pose: 'Prone',
       no:'intermediate-4'
     },
     {
       name: "Ustrasana",
-      link: "Yoga Images/Intermediate/i5.jpg",
+      link: "Intermediate/i5.jpg",
       description: "Camel pose",
       pose: 'Seated',
       no:'intermediate-5'
     },
     {
       name: "Vajrasana",
-      link: "Yoga Images/Intermediate/i6.jpg",
+      link: "Intermediate/i6.jpg",
       description: "Thonderbolt pose",
       pose: 'Seated',
       no:'intermediate-6'
     },
     {
       name: "Shashankasana",
-      link: "Yoga Images/Intermediate/i7.jpg",
+      link: "Intermediate/i7.jpg",
       description: "Hare pose",
       pose: 'Seated',
       no:'intermediate-7'
     },
     {
       name: "Paschimottasana",
-      link: "Yoga Images/Intermediate/i8.jpg",
+      link: "Intermediate/i8.jpg",
       description: "Seated Forward Bend",
       pose: 'Seated',
       no:'intermediate-8'
@@ -208,56 +221,56 @@ let intermediateData = [
 let advanceData = [
   {
     name: "Bakasana",
-    link: "Yoga Images/Advanced/a1.jpg",
+    link: "Advanced/a1.jpg",
     description: "Crow pose",
     pose: 'Supine',
     no:'advanced-1'
   },
   {
     name: "Sirshasana",
-    link: "Yoga Images/Advanced/a2.jpg",
+    link: "Advanced/a2.jpg",
     description: "Headstand pose",
     pose: 'Standing',
     no:'advanced-2'
   },
   {
     name: "Matsyasana",
-    link: "Yoga Images/Advanced/a3.jpg",
+    link: "Advanced/a3.jpg",
     description: "Fish pose",
     pose: 'Prone',
     no:'advanced-3'
   },
   {
     name: "Chakrasana",
-    link: "Yoga Images/Advanced/a4.jpg",
+    link: "Advanced/a4.jpg",
     description: "Wheel pose",
     pose: 'Prone',
     no:'advanced-4'
   },
   {
     name: "Dhanurasana",
-    link: "Yoga Images/Advanced/a5.jpg",
+    link: "Advanced/a5.jpg",
     description: "Bow pose",
     pose: 'Supine',
     no:'advanced-5'
   },
   {
     name: "Garudasana",
-    link: "Yoga Images/Advanced/a6.jpg",
+    link: "Advanced/a6.jpg",
     description: "Eagle pose",
     pose: 'Standing',
     no:'advanced-6'
   },
   {
     name: "Astavakrasana",
-    link: "Yoga Images/Advanced/a7.jpeg",
+    link: "Advanced/a7.jpeg",
     description: "Eight angle pose",
     pose: 'Supine',
     no:'advanced-7'
   },
   {
     name: "Gaumukhasana",
-    link: "Yoga Images/Advanced/a8.jpg",
+    link: "Advanced/a8.jpg",
     description: "Cow face pose",
     pose: 'Seated',
     no:'advanced-8'
@@ -349,11 +362,11 @@ function display(arr){
     for(ele of arr){
       let icon=''
       if(favList==null){
-        icon='🤍'
+        icon='🖤'
       }else if(favList[ele.no]){
         icon='❤️'
       } else {
-        icon='🤍'
+        icon='🖤'
       }
         let add=false
         if(filterBtns[filterBtns.length-1].checked){
@@ -376,8 +389,11 @@ function display(arr){
             count++
         }
     }
+    setTimeout(()=>{
+      document.getElementById('yoga-bg').style.height=document.getElementById('yoga-box').offsetHeight+50+'px'
+    },500)
 }
-
+  
 //fav-yoga
 
 addFavYoga=(curr,data)=>{
@@ -385,7 +401,7 @@ addFavYoga=(curr,data)=>{
     if(favYoga==null){
         favYoga=[]
     }
-    if(curr.innerHTML=='🤍'){
+    if(curr.innerHTML=='🖤'){
         curr.innerHTML='❤️'
         favYoga.push({name:data.name,description:data.description,no:data.no})
         localStorage.setItem('favYoga',JSON.stringify(favYoga))
@@ -393,7 +409,7 @@ addFavYoga=(curr,data)=>{
         localStorage.setItem('favList',JSON.stringify(favList))
         
       }else{
-        curr.innerHTML='🤍'
+        curr.innerHTML='🖤'
         for(i in favYoga){
           if(favYoga[i].name==data.name){
             favYoga=favYoga.slice(0,i).concat(favYoga.slice(i+1))

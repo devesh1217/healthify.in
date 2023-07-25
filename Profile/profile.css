@@ -16,111 +16,9 @@ body{
     font-family: 'Anek Devanagari', sans-serif;
     box-sizing: border-box;
 }
-#header-img{
-    background-image: url("Profile Images/profile.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    opacity: 80%;
-    height: 100vh;
-}
-#header-bg{
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
-nav{
-    color: white;
-    position: absolute;
-    top: 0px;
-    background-color: #00000068;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    z-index: 10;
-}
-#logo{
-    display: inline;
-    justify-self: start;
-    align-self: stretch;
-}
-#logo-img{
-    width: 60px;
-    padding: 10px;
-    float: left;
-    margin: 10px;
-    padding-right: 0;
-    margin-right: 0;
-}
-#name{
-    display: inline;
-    margin: 10px;
-    padding: 10px;
-    font-size: 30px;
-    border-right: 2px white solid;
-}
-nav a{
-    text-decoration: none;
-}
-.menus{
-    background-color: transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin: 10px;
-    display: inline;
-    padding: 0px;
-    margin: 20px;
-    font-size: 20px;
-}
-.menus:hover {
-    border-bottom: 3px white solid;
-}
-.menus:active {
-    border-bottom: 3px white solid;
-}
-#header-text{
-    color: white;
-    font-size: 100px;
-    position: absolute;
-    top: 32vh;
-    right: 10vw;
-    z-index: 2;
-}
-#header-text-bg{
-    font-size: 100px;
-    position: absolute;
-    top: 42vh;
-    right: 9.5vw;
-    background-color: #512bc3a5;
-    width: 640px;
-    height: 40px;
-    z-index: 1;
-    border-radius: 40px;
-}
-#header-text2{
-    color: white;
-    font-size: 40px;
-    position: absolute;
-    top: 62vh;
-    right: 21vw;
-    z-index: 2;
-}
-#header-text-bg2{
-    font-size: 100px;
-    position: absolute;
-    top: 66vh;
-    right: 20vw;
-    background-color: #770303a1;
-    width: 280px;
-    height: 20px;
-    z-index: 1;
-    border-radius: 40px;
+#menu6{
+    border-bottom: 0.24vw white solid;
+    color: #ffffff;
 }
 main{
     padding-inline: 10vw;
@@ -133,12 +31,13 @@ main{
     top: 115vh;
     left: 9vw;
     background-color: #86e045a1;
-    width: 480px;
-    height: 40px;
+    width: 32vw;
+    height: 2.2vw;
     z-index: -1;
     border-radius: 40px;
 }
 #BMI{
+    display: inline;
     font-size: 50px;
 }
 #ans-of-how-to{
@@ -183,7 +82,8 @@ main{
 }
 gender{
     margin: 1vw;
-    width: 20vw;
+    width: 100%;
+    text-align: center;
     font-size: 20px;
 }
 #BMI-ans,#BMI-result{
@@ -206,48 +106,37 @@ hr{
     border-radius: 2px;
     width: 100%;
 }
-/* .bmi{
-    position: relative;
-    background-color: #fff;
-    padding: 0;
-    margin: 0;
-    font-size: 12px;
-}
-#bmi1{
-    left: 7%;
-}
-#bmi2{
-    left: 11%;
-}
-#bmi3{
-    left: 16%;
-}
-#bmi4{
-    left: 39%;
-}
-#bmi5{
-    left: 57%;
-}
-#bmi6{
-    left: 75%;
-}
-#bmi7{  
-    left: 0%;
-} */
 #pointer{
     align-self: flex-start;
     position: relative;
     left: 30%;
     font-size: 30px;
 }
-#BMI-bg2{
-    font-size: 100px;
+#yoga-title-bg{
     position: absolute;
-    top: 227vh;
+    top: 241vh;
     left: 9vw;
     background-color: #86e045a1;
-    width: 480px;
-    height: 40px;
+    width: 35vw;
+    height: 2.2vw;
     z-index: -1;
     border-radius: 40px;
+}
+#yoga-title{
+    font-size: 3vw;
+    display: inline;
+}
+#yoga-table{
+    margin-inline: 2vw ;
+    text-align: left;
+    width: 100%;
+}
+#yoga-table tr,td,th{
+    padding: 0.5vw;
+    font-size: 1.8vw;
+    text-align: left;
+}
+th{
+    font-size: 2vw;
+    border-bottom: 0.4vw solid black;
 }

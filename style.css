@@ -16,130 +16,9 @@ body{
     font-family: 'Anek Devanagari', sans-serif;
     box-sizing: border-box;
 }
-#header-img{
-    background-image: url("Images/header.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    opacity: 40%;
-    height: 100vh;
-}
-#header-bg{
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
-nav{
-    color: white;
-    position: absolute;
-    top: 0px;
-    background-color: #00000068;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    z-index: 10;
-}
-#logo{
-    display: inline;
-    justify-self: start;
-    align-self: stretch;
-}
-#logo-img{
-    width: 60px;
-    padding: 10px;
-    float: left;
-    margin: 10px;
-    padding-right: 0;
-    margin-right: 0;
-}
-#name{
-    display: inline;
-    margin: 10px;
-    padding: 10px;
-    font-size: 30px;
-    border-right: 2px white solid;
-}
-nav a{
-    text-decoration: none;
-}
-.menus{
-    background-color: transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin: 10px;
-    display: inline;
-    padding: 0px;
-    margin: 20px;
-    font-size: 20px;
-}
-.menus:hover {
-    border-bottom: 3px white solid;
-}
-.menus:active {
-    border-bottom: 3px white solid;
-}
-/* @media screen and (orientation = portrait){
-    #header-img{
-        background-repeat: no-repeat;
-        background-attachment: local;
-        background-size: contain;
-        width: 100vw;
-        opacity: 40%;
-    }
-    #header-bg{
-        background-color: black;
-        width: 100vw;
-        position: absolute;
-        top: 0;
-        z-index: -1;
-    }
-    .menus{
-        display: hide;
-    }
-} */
-#header-text{
-    color: white;
-    font-size: 100px;
-    position: absolute;
-    top: 40vh;
-    right: 10vw;
-    z-index: 2;
-}
-#header-text-bg{
-    font-size: 100px;
-    position: absolute;
-    top: 50vh;
-    right: 10vw;
-    background-color: #4dd09ea1;
-    width: 690px;
-    height: 40px;
-    z-index: 1;
-    border-radius: 40px;
-}
-#header-text2{
-    color: white;
-    font-size: 40px;
-    position: absolute;
-    top: 70vh;
-    right: 17vw;
-    z-index: 2;
-}
-#header-text-bg2{
-    font-size: 100px;
-    position: absolute;
-    top: 74vh;
-    right: 16vw;
-    background-color: #f592eba1;
-    width: 520px;
-    height: 20px;
-    z-index: 1;
-    border-radius: 40px;
+#menu1{
+    border-bottom: 0.24vw white solid;
+    color: #ffffff;
 }
 main{
     padding-inline: 10vw;
@@ -158,6 +37,7 @@ main{
     border-radius: 40px;
 }
 #how-to{
+    display: inline;
     font-size: 50px;
 }
 #ans-of-how-to{
@@ -165,18 +45,22 @@ main{
 }
 #steps{
     display: flex;
-    width: 90vw;
-    margin-inline: 4vw;
+    width: 92vw;
+    margin-inline: 2vw;
     padding: 1vw;
     flex-direction: row;    
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 0.5vw;
 }
 .step{
-    padding: 0.5vw;
+    /* padding: 0.5vw; */
     border-radius: 100px 0px;
-    max-width: min-content;
+    width: 15vw;
+    min-width: 200px;
+    border: 0.8vw solid transparent;
 }
+
 .step-no{
     font-size: 30px;
     background-color: #e53e3e;
@@ -204,7 +88,7 @@ main{
     display: inline;
 }
 .step-img{
-    width: 15.4vw;
+    width: 100%;
     height: 150px;
     border-radius: 100px 0 0 0;
 }
@@ -227,6 +111,31 @@ main{
 #step5{
     grid-area: 'step5';
     background-color: #0887a056;
+}
+#step1:hover{
+    border: 0.8vw solid #0d06d73c;
+    background-color: transparent;
+    cursor: pointer;
+}
+#step2:hover{
+    border: 0.8vw solid #d607a939;
+    background-color: transparent;
+    cursor: pointer;
+}
+#step3:hover{
+    border: 0.8vw solid #ed000445;
+    background-color: transparent;
+    cursor: pointer;
+}
+#step4:hover{
+    border: 0.8vw solid #0260004a;
+    background-color: transparent;
+    cursor: pointer;
+}
+#step5:hover{
+    border: 0.8vw solid #0887a056;
+    background-color: transparent;
+    cursor: pointer;
 }
 .step-text{
     margin: 1vw;

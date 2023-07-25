@@ -4,47 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exersice & Yoga</title>
+    <link rel="shortcut icon" href="Home/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="yoga.css">
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../login.css">
+    <link rel="stylesheet" href="../mobile.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <nav id="nav">
-        <a href="index.html">
-            <div id="logo"><img id="logo-img" src="Images/logo.png" alt=""></div>
+        <a href="../index.html">
+            <div id="logo"><img id="logo-img" src="../Home/logo.png" alt=""></div>
             <div id="name">Healthify.in</div>
         </a>
-        <a href="index.html" class="menus" id="menu1">Home</a>
+        <a href="../index.html" class="menus" id="menu1">Home</a>
         <a href="yoga.html" class="menus" id="menu2">Yoga</a>
         <a href="#" class="menus" id="menu3">Meditaion</a>
         <a href="#" class="menus" id="menu4">Diet</a>
         <a href="#" class="menus" id="menu5">About Us</a>
-        <a href="profile.html" class="menus" id="menu6" >Profile</a>
+        <a href="../Profile/profile.html" class="menus" id="menu6" >Profile</a>
         <a href="#" class="menus" id="menu7" >Log in</a>
-        <a href="javascript: toggle_menu();" class="menus" id="menu8"><img src="menu.png" width="20px"></a>
+        <a href="javascript: toggle_menu();" class="menus" id="menu8"><img src="../Home/menu.png" width="20px"></a>
         <div id="hide-menu-box">
-            <a href="javascript:close_menu()" id="hide-close"><img id="hide-close-img" src="Close.png" alt=""></a>
+            <a href="javascript:close_menu()" id="hide-close"><img id="hide-close-img" src="../Home/Close.png" alt=""></a>
             <div id="menu-header">
-                <div id="hide-logo"><img id="hide-logo-img" src="Images/logo.png" alt=""></div>
+                <div id="hide-logo"><img id="hide-logo-img" src="../Home/logo.png" alt=""></div>
                 <div id="hide-name">Healthify.in</div>
             </div>
-            <a href="index.html" class="hide-menus" id="hide-menu1">Home</a>
+            <a href="../index.html" class="hide-menus" id="hide-menu1">Home</a>
             <a href="yoga.html" class="hide-menus" id="hide-menu2">Yoga</a>
             <a href="#" class="hide-menus" id="hide-menu3">Meditaion</a>
             <a href="#" class="hide-menus" id="hide-menu4">Diet</a>
             <a href="#" class="hide-menus" id="hide-menu5">About Us</a>
-            <a href="profile.html" class="hide-menus" id="hide-menu6" >Profile</a>
+            <a href="../Profile/profile.html" class="hide-menus" id="hide-menu6" >Profile</a>
             <a href="#" class="hide-menus" id="hide-menu7" >Log in</a>
         </div>
     </nav>
     <header>
-        <img src="Yoga Images/Yoga-header.jpg" id="header-img"></img>
+        <img src="Yoga-header.jpg" id="header-img"></img>
         <div id="header-bg"></div>
         <div id="header-text">Let's sweat a little</div>
         <div id="header-text-bg"></div>
         <div id="header-text2">Yoga is the best option for that</div>
         <div id="header-text-bg2"></div>
-        <a href="#why-yoga" class="material-symbols-outlined">keyboard_double_arrow_down</a>
+        <a id="arrow" href="#yoga-bg" class="material-symbols-outlined">keyboard_double_arrow_down</a>
     </header>
+    <div id="login-box">
+        <div id="login-bg"></div>
+        <span id="login-close">x</span>
+        <a id="login-menu-header" href="../index.html">
+            <div id="hide-logo"><img id="hide-logo-img" src="../Home/logo.png" alt=""></div>
+            <div id="hide-name">Healthify.in</div>
+        </a>
+        <hr>
+        <div id="login-title">Log in/Sign Up</div>
+        <div id="login-title-bg"></div>
+        <fieldset><legend></legend><input type="text" id="user-id" placeholder="User ID"></fieldset>
+        <fieldset><legend></legend><input type="password" id="pswd" placeholder="Password"></fieldset>
+        <div id="other-login"><button><img src="../Home/google.avif" alt="">Login with Google</button><button><img src="../Home/Facebook_Logo.webp" alt="">Login with Facbook</button></div>
+        <a href="#">Forgot Password?</a>
+    </div>
     <main>
         <h1 id="why-yoga">Is Yoga Right for Me?</h1>
         <div class="normal-text">
@@ -66,7 +86,7 @@
             <input type="radio" name="level" id="beginer"><label for="beginer">Beginer</label>
             <input type="radio" name="level" id="intermediate"><label for="intermediate">Intermediate</label>
             <input type="radio" name="level" id="advanced" ><label for="advanced">Advanced</label>
-            <button id="filter-btn"><img src="Yoga Images/filter btn.png"></button>
+            <button id="filter-btn"><img src="filter btn.png"></button>
         </div>
         <div id="yoga-filters">
             <span><input type="checkbox" name="filter" id="Standing"><label for="Standing">Standing Pose</label></span>
@@ -79,5 +99,6 @@
 
     </div>
     <script src="yoga.js"></script>
+    <script src="../login.js"></script>
 </body>
 </html>

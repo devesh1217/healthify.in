@@ -1,0 +1,151 @@
+@media screen and (orientation = portrait){
+    #header-img{
+        width: 100vw;
+        opacity: 40%;
+        height: auto;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menus{
+        display: none;
+    }
+    #menu8{
+        display: inline;
+        justify-self: flex-end;
+    }
+    #name{
+        align-self: center;
+        font-size: 15px;
+    }
+    #logo-img{
+        width: 40px;
+    }
+    #yoga-bg{
+        width: 100vw;
+        margin-inline: 0;
+    }
+    #yoga-box{
+        margin-inline: 2vw;
+    }
+    #header-text{
+        font-size: 10vw;
+        top: 5vh;
+        right: 10vw;
+    }
+
+    #header-text2{
+        font-size: 4vw;
+        top: 15vh;
+        right: 22vw;
+    }
+
+    #why-yoga{
+        font-size: 6vw;
+    }
+    .normal-text{
+        font-size: 4vw;
+    }
+    #yoga-title{
+        font-size: 8vw;
+    }
+    #yoga-form label{
+        width: fit-content;
+        font-size: 3.5vw;
+    }
+    #yoga-filters label{
+        font-size: 2.5vw;
+    }
+    .items{
+        width:max-content;
+    }
+    .items h2{
+        font-size: 4vw;
+    }
+    .items h3{
+        font-size: 3vw;
+    }
+    /* homepage */
+    #steps{
+        margin-inline: 5vw;
+        padding: 0;
+        width: 90vw;
+    }
+    .step{
+        width: 60vw;
+        margin: 5vw;
+    }
+    .step-no{
+        padding-inline: 3vw;
+    }
+    .step-title{
+        font-size: 7vw;
+    }
+    .step-text{
+        font-size: 4vw;
+    }
+    #how-to{
+        font-size: 7vw;
+    }
+    #ans-of-how-to{
+        font-size: 4vw;
+    }
+    /* profile page */
+    #BMI{
+        font-size: 8vw;
+    }
+    #yoga-title{
+        font-size: 6vw;
+    }
+    #BMI-box{
+        margin-inline: 10vw;
+    }
+    #BMI-box input{
+        width: 50vw;
+    }
+    gender{
+        width: 100%;
+        text-align: center;
+    }
+    #BMI-calc{
+        width: 50vw;
+    }
+    #BMI-ans,#BMI-result{
+        width: 100%;
+    }
+    /* login */
+    #login-box{
+        margin-inline: 5%;
+        width: 90%;
+        top: 20vh;
+    }
+    #login-menu-header div{
+        font-size: 7vw;
+    }
+    #login-menu-header img{
+        width: 8vw;
+    }
+    #login-title{
+        font-size: 5vw;
+    }
+    #login-box input{
+        font-size: 4vw;
+    }
+    #login-box fieldset{
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+    }
+    #other-login button{
+        font-size: 3vw;
+        margin-bottom: 1vw;
+    }
+    #other-login img{
+        width: 4vw;
+        margin: 1vw;
+    }
+    #login-close{
+        top: 1vw;
+        font-size: 5vw;
+    }
+}

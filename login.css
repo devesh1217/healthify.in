@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&display=swap');
+*{
+    font-family: 'Anek Devanagari', sans-serif;
+}
+#login-close{
+    z-index: 200;
+    position: absolute;
+    top: 3vh;
+    right: 3vh;
+    font-size: 2vw;
+    cursor: pointer;
+}
+#login-close:active{
+    transform: translateY(3px);
+}
+#login-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 199;
+    background-color: #ffffff50;
+}
+#login-box{
+    display: none;
+    z-index: 200;
+    position: fixed;
+    margin-inline: 35vw;
+    width: 30vw;
+    padding: 2vw;
+    flex-direction: column;
+    align-items: center;
+    top: 8vh;
+    background-color: #fffefe;
+    border-radius: 1vw;
+}
+#login-menu-header{
+    text-decoration: none;
+    z-index: 201;
+    background-color: black;
+    width: fit-content;
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    border-radius: 6.4vw 0 6.4vw 0;
+    margin-bottom: 0.8vw;
+    color: white;
+}
+#hide-logo-img{
+    width: 4vw;
+}
+#hide-name{
+    font-size: 3vw;
+}
+#login-title{
+    z-index: 200;
+    font-size: 3vw;
+}
+#login-title-bg{
+    position: absolute;
+    background-color: #f592eba1;
+    z-index: -1;
+    border-radius: 40px;
+}
+#login-box hr{
+    width: 100%;
+    color: black;
+    border: 0.1vw solid black;
+}
+#login-box fieldset{
+    z-index: 200;
+    margin: 1vw;
+    width: 70%;
+    padding: 0;
+    border-radius: 10px;
+}
+#login-box input{
+    z-index: 200;
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    margin-inline: 5%;
+    padding: 0.5vw;
+    border-radius: 10px;
+    outline: none ;
+    font-size: 1.2vw;
+}
+#login-box legend{
+    z-index: 200;
+    margin-inline:1vw; 
+    font-size: 1.2vw;
+}
+#login-box button{
+    z-index: 200;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3vw;
+    margin: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+#login-box button:hover{
+    z-index: 200;
+    background-color: #9fe6f8;
+}
+#login-box button:active{
+    z-index: 200;
+    transform: translateY(4px);
+}
+#other-login img{
+    z-index: 200;
+    width: 2vw;
+    padding: 0.5vw;
+}
+a{
+    position: relative;
+    z-index: 200;
+    text-decoration: none;
+    color: initial;
+}
+#login-menu-header{
+    z-index: 200;
+    color: white;
+}

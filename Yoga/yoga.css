@@ -16,164 +16,9 @@ body{
     font-family: 'Anek Devanagari', sans-serif;
     box-sizing: border-box;
 }
-#header-img{
-    width: 100%;
-    opacity: 40%;
-    height: 100vh;
-}
-#header-bg{
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
-nav{
-    color: white;
-    position: fixed;
-    top: 0px;
-    background-color: transparent;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    z-index: 10;
-}
-#logo{
-    display: inline;
-    justify-self: start;
-    align-self: stretch;
-}
-#logo-img{
-    width: 4vw;
-    padding: 0.8vw;
-    float: left;
-    margin: 0.8vw;
-    padding-right: 0;
-    margin-right: 0;
-}
-#name{
-    display: inline;
-    margin: 0.8vw;
-    padding: 0.8vw;
-    font-size: 2.2vw;
-    border-right: 0.2vw white solid;
-}
-nav a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: white;
-}
-.menus{
-    background-color: transparent;
-    color: #afafaf;
-    border: none;
-    cursor: pointer;
-    margin: 0.8vw;
-    display: inline;
-    padding: 0px;
-    margin: 1.6vw;
-    font-size: 1.33vw;
-    border-bottom: 0.24vw transparent solid;
-}
 #menu2{
     border-bottom: 0.24vw white solid;
     color: #ffffff;
-}
-#menu8{
-    display: none;
-}
-.menus:hover {
-    color: #ffffff;
-    border-bottom: 0.24vw white solid;
-}
-.menus:active {
-    color: #ffffff;
-    border-bottom: 0.24vw white solid;
-}
-#hide-menu-box{
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 100;
-    background-color: #fff;
-    display: none;
-    padding-inline: 10vw;
-    padding-top: 2vh;
-}
-#hide-menu-box a{
-    color: black;
-    font-size: 5vw;
-    padding: 1vh;
-    display: block;
-}
-#menu-header{
-    clear: both;
-    background-color: black;
-    width: fit-content;
-    padding: 1.5vw;
-    display: flex;
-    align-items: center;
-    border-radius: 6.4vw 0 6.4vw 0;
-    gap: 1.6vw;
-    margin-bottom: 0.8vw;
-}
-#hide-logo-img{
-    width: 12vw;
-}
-#hide-close-img{
-    width: 6vw;
-}
-#hide-name{
-    font-size: 8vw;
-}
-#hide-close{
-    position: relative;
-    float: right;
-    top: 0.5vh;
-    right: 20vw;
-}
-
-#header-text{
-    color: white;
-    font-size: 6.5vw;
-    position: absolute;
-    top: 40vh;
-    right: 10vw;
-    z-index: 2;
-}
-#header-text-bg{
-    font-size: 100px;
-    position: absolute;
-    top: 50vh;
-    right: 10vw;
-    background-color: #4dd09ea1;
-    width: 770px;
-    height: 40px;
-    z-index: 1;
-    border-radius: 40px;
-}
-#header-text2{
-    color: white;
-    font-size: 2.5vw;
-    position: absolute;
-    top: 70vh;
-    right: 17vw;
-    z-index: 2;
-}
-#header-text-bg2{
-    font-size: 2.5vw;
-    position: absolute;
-    top: 74vh;
-    right: 16vw;
-    background-color: #f592eba1;
-    width: 550px;
-    height: 20px;
-    z-index: 1;
-    border-radius: 40px;
 }
 main{
     padding-inline: 10vw;
@@ -184,7 +29,7 @@ main{
     font-size: 100px;
     position: absolute;
     top: 115vh;
-    left: 12vw;
+    left: 10vw;
     background-color: #86e045a1;
     width: 540px;
     height: 40px;
@@ -192,7 +37,7 @@ main{
     border-radius: 40px;
 }
 #why-yoga{
-    font-size: 3.5vw;
+    font-size: 4vw;
     margin: 10px;
     /* padding-top: 10px;
     padding-bottom: 10px; */
@@ -281,15 +126,16 @@ main{
 #yoga-display{
     display: flex;
     justify-content: space-evenly;
+    align-items: stretch;
     flex-wrap: wrap;
     padding: 2vw;
     background-color: transparent;
 
 }
+
 .items{
-    width: 20vw;
     text-align: center;
-    min-width: max-content;
+    width: 25vw;
     transition: transformation 0.2s;
     padding: 0.7vw;
 }
@@ -304,6 +150,7 @@ main{
     border-bottom: 0.3vw solid black  ;
     margin-right: 2vw;
     border-radius: 5px;
+    padding-bottom: 1vw;
 }
 .items h3{
     font-size: 1vw;
@@ -329,50 +176,4 @@ main{
 }
 #yoga-filters span:hover{
     transform: translateY(3px);
-}
-@media screen and (orientation = portrait){
-    #header-img{
-        width: 100vw;
-        opacity: 40%;
-        height: auto;
-    }
-    nav{
-        display: flex;
-        justify-content: space-between;
-    }
-    .menus{
-        display: none;
-    }
-    #menu8{
-        display: inline;
-        justify-self: flex-end;
-    }
-    #name{
-        align-self: center;
-        font-size: 15px;
-    }
-    #logo-img{
-        width: 40px;
-    }
-    #yoga-bg{
-        width: 100vw;
-        margin-inline: 0;
-    }
-    #yoga-box{
-        margin-inline: 2vw;
-    }
-    #header-text{
-        top: 10vh;
-        right: 5vw;
-    }
-    #header-text-bg{
-        right: 5vw;
-    }
-    #header-text2{
-        top: 20vh;
-        right: 12vw;
-    }
-    #header-text-bg2{
-        right: 12vw;
-    }
 }
