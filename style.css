@@ -53,6 +53,10 @@ main{
     justify-content: space-evenly;
     gap: 0.5vw;
 }
+#steps a{
+    text-decoration: none;
+    color: inherit;
+}
 .step{
     /* padding: 0.5vw; */
     border-radius: 100px 0px;
@@ -60,7 +64,6 @@ main{
     min-width: 200px;
     border: 0.8vw solid transparent;
 }
-
 .step-no{
     font-size: 30px;
     background-color: #e53e3e;

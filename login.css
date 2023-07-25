@@ -38,6 +38,7 @@
 #login-menu-header{
     text-decoration: none;
     z-index: 201;
+    font-size: 2vw;
     background-color: black;
     width: fit-content;
     padding: 1vw;
@@ -47,10 +48,11 @@
     margin-bottom: 0.8vw;
     color: white;
 }
-#hide-logo-img{
+
+#login-logo-img{
     width: 4vw;
 }
-#hide-name{
+#login-name{
     font-size: 3vw;
 }
 #login-title{
@@ -118,13 +120,9 @@
     width: 2vw;
     padding: 0.5vw;
 }
-a{
+#forgot a{
     position: relative;
     z-index: 200;
     text-decoration: none;
     color: initial;
-}
-#login-menu-header{
-    z-index: 200;
-    color: white;
 }

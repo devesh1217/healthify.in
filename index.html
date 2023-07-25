@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health, Fitness and more</title>
     <link rel="shortcut icon" href="Home/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="header.css">
@@ -49,6 +50,21 @@
         <div id="header-text-bg2"></div>
         <a id="arrow" href="#how-to" class="material-symbols-outlined">keyboard_double_arrow_down</a>
     </header>
+    <div id="login-box">
+        <div id="login-bg"></div>
+        <span id="login-close">x</span>
+        <a id="login-menu-header" href="../index.html">
+            <div id="login-logo"><img id="login-logo-img" src="../Home/logo.png" alt=""></div>
+            <div id="login-name">Healthify.in</div>
+        </a>
+        <hr>
+        <div id="login-title">Log in/Sign Up</div>
+        <div id="login-title-bg"></div>
+        <fieldset><legend></legend><input type="text" id="user-id" placeholder="User ID"></fieldset>
+        <fieldset><legend></legend><input type="password" id="pswd" placeholder="Password"></fieldset>
+        <div id="other-login"><button><img src="../Home/google.avif" alt="">Login with Google</button><button><img src="../Home/Facebook_Logo.webp" alt="">Login with Facbook</button></div>
+        <div id="forgot"><a href="#">Forgot Password?</a></div>
+    </div>
     <main>
         <h1 id="how-to">How to become healthy?</h1>
         <div id="ans-of-how-to">
@@ -57,37 +73,38 @@
         <div id="how-to-bg"></div>
     </main>
     <div id="steps">
-        <div class="step" id="step1">
+        <a class="step" id="step1" href="index.html">
             <img src="Home/Determination.jpeg" alt="" class="step-img">
             <span class="step-no" id="step-no-1">1</span>
             <h2 class="step-title">Determination</h2>
             <div class="step-text">Firmly determine your health goal and keep on that. Your health is in your hands only.</div>
-        </div>
-        <div class="step" id="step2">
+        </a>
+        <a class="step" id="step2" href="#">
             <img src="Home/Diet.jpeg" alt="" class="step-img">
             <span class="step-no" id="step-no-2">2</span>
             <h2 class="step-title">Proper Diet</h2>
             <div class="step-text">Have proper diet that suits your body nature and helps you to stay healthy.</div>
-        </div>
-        <div class="step" id="step3">
+        </a>
+        <a class="step" id="step3" href="Yoga/yoga.html">
             <img src="Home/Yoga.jpg" alt="" class="step-img">
             <span class="step-no" id="step-no-3">3</span>
             <h2 class="step-title">Exercise/Yoga</h2>
             <div class="step-text">Physical exercises like Yoga are basic and most important step to become fit.</div>
-        </div>
-        <div class="step" id="step4">
+        </a>
+        <a class="step" id="step4" href="#">
             <img src="Home/Meditaion.jpg" alt="" class="step-img">
             <span class="step-no" id="step-no-4">4</span>
             <h2 class="step-title">Meditaion</h2>
             <div class="step-text">Health is not only about physical fitness. Meditaion is the best mental medicine.</div>
-        </div>
-        <div class="step" id="step5" onclick="javascript:document.location='profile.html'">
+        </a>
+        <a class="step" id="step5" href="Profile/profile.html">
             <img src="Home/happiness.webp" alt="" class="step-img">
             <span class="step-no" id="step-no-5">5</span>
             <h2 class="step-title">Stay Happy</h2>
             <div class="step-text">Everything is worthless unless you are happy. Stay happy and enjoy your life.</div>
-        </div>
+        </a>
     </div>
     <script src="home.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
