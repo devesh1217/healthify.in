@@ -1,0 +1,43 @@
+#footer{
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5f7;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #000000 16px ), repeating-linear-gradient( #000000de, #000000 );
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+#footer-header{
+    display: flex;
+    align-items: flex-start;
+}
+#footer-logo{
+    width: 7vw;
+}
+#footer-name{
+    color: white;
+    text-decoration: none;
+    font-size: 4vw;
+}
+#pages{
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+#pages a{
+    text-decoration: none;
+    font-size: 1vw;
+    color: white;
+}
+#contact{
+    color: white;
+}
+#copyright{
+    color: white;
+    font-size: 1vw;
+}

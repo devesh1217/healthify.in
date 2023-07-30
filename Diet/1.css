@@ -132,16 +132,28 @@ body{
     /* height: 8vh; */
   }
   
-  button {
+  #search {
     padding: 20px;
-    font-size: 1.5em;
+    font-size: 1.7em;
     border-radius: 10px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
     width: 10vw;
-    height: 8vh;
+    height: 10vh;
+  }
+  #search:hover {
+    /* background-color: #b2b2b274; */
+    transform: scale(1.1);
+  }
+  /* #search:focus {
+    background: linear-gradient(#152B40, #152B40);
+    color: white
+    } */
+  #search:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
   }
   
   #displayjs {
@@ -263,7 +275,23 @@ body{
     background-color: #b2b2b274;
     transform: scale(1.1);
   }
+  .category-button:focus {
+    background: linear-gradient(#152B40, #152B40);
+    color: white
+    }
 
+  #breakfast:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  #lunch:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  #dinner:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
   
   .food-and-totals {
     display: flex;
@@ -303,6 +331,7 @@ body{
     background-color: #5faefe;
     color: black;
   } */
+  
   
   .food-buttons button.selected {
     background-color: #82ffd3;
@@ -423,4 +452,17 @@ body{
     padding: 5px 10px;
     background-color: #f7f7f7;
     border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color:transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: orange;
+    border-radius: 15px;
   }
