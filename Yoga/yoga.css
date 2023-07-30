@@ -44,7 +44,7 @@ main{
     display: inline-block;
 }
 .normal-text{
-    font-size: 1.8vw;
+    font-size: 1.4vw;
     margin: 1vw;
 }
 #yoga-bg{
@@ -113,6 +113,9 @@ main{
     border-radius: 3vw;
     border: none;
 }
+#filter-btn:hover{
+    background-color: #dbdbdb;
+}
 #filter-btn:active{
     background-color: #dbdbdb;
     transform: translateY(3px);
@@ -138,6 +141,7 @@ main{
     width: 25vw;
     transition: transformation 0.2s;
     padding: 0.7vw;
+    transition: all ease 0.2s;
 }
 .items:hover{
     transform: scale(1.1);
@@ -169,7 +173,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     font-size: 1vw;
-    transition: transform 0.5s;
+    transition: all ease 1s;
 }
 #yoga-filters input,#yoga-filters label{
     margin: 0.3vw;
@@ -177,3 +181,5 @@ main{
 #yoga-filters span:hover{
     transform: translateY(3px);
 }
+/* #filter-btn:active #yoga-filter{
+} */

@@ -114,19 +114,10 @@
     #BMI-ans,#BMI-result{
         width: 100%;
     }
-    #yoga-title{
-        font-size: 6.5vw;
-    }
-    #yoga-table tr,td,th{
-        font-size: 4vw;
-    }
-    th{
-        font-size: 5vw;
-    }   
     /* login */
     #login-box{
-        margin-inline: 10%;
-        width: 80%;
+        margin-inline: 5%;
+        width: 90%;
         top: 20vh;
     }
     #login-menu-header div{

@@ -52,6 +52,7 @@ main{
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 0.5vw;
+    margin-bottom: 5vw;
 }
 #steps a{
     text-decoration: none;
@@ -63,6 +64,7 @@ main{
     width: 15vw;
     min-width: 200px;
     border: 0.8vw solid transparent;
+    transition: all ease-in-out 0.1s;
 }
 .step-no{
     font-size: 30px;
@@ -116,26 +118,31 @@ main{
     background-color: #0887a056;
 }
 #step1:hover{
+    transform: scale(1.1);
     border: 0.8vw solid #0d06d73c;
     background-color: transparent;
     cursor: pointer;
 }
 #step2:hover{
+    transform: scale(1.1);
     border: 0.8vw solid #d607a939;
     background-color: transparent;
     cursor: pointer;
 }
 #step3:hover{
+    transform: scale(1.1);
     border: 0.8vw solid #ed000445;
     background-color: transparent;
     cursor: pointer;
 }
 #step4:hover{
+    transform: scale(1.1);
     border: 0.8vw solid #0260004a;
     background-color: transparent;
     cursor: pointer;
 }
 #step5:hover{
+    transform: scale(1.1);
     border: 0.8vw solid #0887a056;
     background-color: transparent;
     cursor: pointer;

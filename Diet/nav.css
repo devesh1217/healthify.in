@@ -13,24 +13,21 @@ nav{
     display: inline;
     justify-self: start;
     align-self: stretch;
-    margin: 0.4vw;
 }
 #logo-img{
     width: 4vw;
-    padding-inline: 0.8vw;
+    padding: 0.8vw;
     float: left;
-    margin-inline: 0.8vw;
+    margin: 0.8vw;
     padding-right: 0;
     margin-right: 0;
 }
 #name{
     display: inline;
-    margin: 0.4vw;
-    padding-inline: 0.8vw;
+    margin: 0.8vw;
+    padding: 0.8vw;
     font-size: 2.2vw;
     border-right: 0.2vw white solid;
-    padding-left: 0;
-    margin-right: 0;
 }
 nav a{
     text-decoration: none;
@@ -43,11 +40,12 @@ nav a{
     color: #afafaf;
     border: none;
     cursor: pointer;
+    margin: 0.8vw;
     display: inline;
-    margin-inline: 1.6vw;
+    padding: 0px;
+    margin: 1.6vw;
     font-size: 1.33vw;
     border-bottom: 0.24vw transparent solid;
-    transition: all ease 0.2s;
 }
 
 #menu8{
