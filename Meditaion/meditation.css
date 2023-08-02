@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&display=swap');
+*{
+    font-family: 'Anek Devanagari', sans-serif;
+}
+body{
+    margin: 0;
+}
+.greeting {
+    display: flex;
+    font-family: sans-serif;
+    margin: 2vw;
+    margin-top: 1.5vw;
+    margin-right: 5vw;
+    justify-content: right;
+    font-size: 2vw;
+    color: rgb(221, 195, 147);
+  }
+  .container {
+    font-family: sans-serif;
+    border: 0vw;
+    border-radius: 0%;
+    margin: 1.2vw;
+
+  }
+  .box_med{
+    background-color: rgba(222, 150, 150, 0.264);
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 8vw;
+    color: rgb(201, 229, 253);  
+    background:url("purple_background.jpg");
+  }
+  .circle{
+    background-color: rgba(56, 233, 40, 0.789);
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0.4vw 0.8vw rgba(10, 10, 10, 0.2),0 0.6vw 2vw 0 rgba(0, 0, 0, 0.19);
+  }
+  .box_med p{
+    margin: 3vw;
+    font-size: 4vw;
+    margin-top: -10vw;
+  }
+  .box_med h2{
+    font-size: 6vw;
+  }
+  .box_med h5{
+    font-size: 3vw;
+    margin: 2vw;
+    z-index: 2;
+  }
+  #btnjoin2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    background-color: rgba(252, 241, 228, 0.583);
+    padding: 1.5vw 6vw;
+    margin: 4vw;
+    border: 0.2vw solid rgba(92, 46, 6, 0.977);
+    border-radius: 3vw;
+    color: rgba(92, 52, 6, 0.977);
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.2),0 0.6vw 2vw 0 rgba(0, 0, 0, 0.19);
+}
+#btnjoin2:hover{
+  background-color: rgba(92, 59, 6, 0.977);
+  color: aliceblue;
+  transition: ease-in;
+  transition-delay: 0.05s;
+  box-shadow: 0 0.6vw 1vw rgba(0, 0, 0, 0.3),0 0.8vw 2.4vw 0 rgba(0, 0, 0, 0.29);
+}
+
+#user{
+    position: absolute;
+    right: 2vw;
+    font-size: 2vw;
+    color: goldenrod;
+}
+#header-text-bg2{
+  background-color: #12a96dcd;
+}
+#header-text-bg{
+  background-color: #4e88e4b7;
+}
+#header-text3{
+    z-index: 2;
+    margin: 0;
+}
+#header-text3-bg{
+    position: absolute;
+    background-color: #dcc91ec9;
+    z-index: 1;
+    border-radius: 40px;
+}
+#nameChange-bg{
+    position: absolute;
+    background-color: #41dc1ec9;
+    z-index: 1;
+    border-radius: 40px;
+}
+#menu3{
+    border-bottom: 0.24vw white solid;
+    color: white;
+}
+#header-img{
+  opacity: 70%;
+}

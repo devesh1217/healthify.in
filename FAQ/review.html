@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Fitness Website Reviews</title>
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <nav id="nav">
+        <a href="../index.html">
+            <div id="logo"><img id="logo-img" src="../Home/logo.png" alt=""></div>
+            <div id="name">Healthify.in</div>
+        </a>
+        <a href="../index.html" class="menus" id="menu1">Home</a>
+        <a href="../Yoga/yoga.html" class="menus" id="menu2">Yoga</a>
+        <a href="../Meditaion/meditation.html" class="menus" id="menu3">Meditaion</a>
+        <a href="../Diet/diet.html" class="menus" id="menu4">Diet</a>
+        <a href="../About/about.html" class="menus" id="menu5">About Us</a>
+        <a href="../Profile/profile.html" class="menus" id="menu6" >Profile</a>
+        <a href="../Plans/plans.html" class="menus" id="menu7" >Plans</a>
+        <a href="../FAQ/faq.html" class="menus" id="menu9" >FAQs</a>
+      <a href="../FAQ/review.html" class="menus" id="menu10" >Review</a>
+        <a href="javascript: toggle_menu();" class="menus" id="menu8"><img src="../Home/menu.png" width="20px"></a>
+        <div id="hide-menu-box">
+            <a href="javascript:close_menu()" id="hide-close"><img id="hide-close-img" src="../Home/Close.png" alt=""></a>
+            <div id="menu-header">
+                <div id="hide-logo"><img id="hide-logo-img" src="../Home/logo.png" alt=""></div>
+                <div id="hide-name">Healthify.in</div>
+            </div>
+            <a href="../index.html" class="hide-menus" id="hide-menu1">Home</a>
+            <a href="../Yoga/yoga.html" class="hide-menus" id="hide-menu2">Yoga</a>
+            <a href="../Meditaion/meditation.html" class="hide-menus" id="hide-menu3">Meditaion</a>
+            <a href="../Diet/diet.html" class="hide-menus" id="hide-menu4">Diet</a>
+            <a href="../About/about.html" class="hide-menus" id="hide-menu5">About Us</a>
+            <a href="../Profile/profile.html" class="hide-menus" id="hide-menu6" >Profile</a>
+            <a href="../Plans/plans.html" class="hide-menus" id="hide-menu7" >Plans</a>
+            <a href="../FAQ/faq.html" class="hide-menus" id="hide-menu7" >FAQs</a>
+            <a href="../FAQ/review.html" class="hide-menus" id="hide-menu7" >Review</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 id="header-text1">What Our Users Say</h1>
+        <div id="header-text1-bg"></div>
+        <br><p> </p>
+        <br><p> </p>
+        <div class="reviews-container">
+            <div class="review">
+                <p class="name">Mihir Gandhi</p>
+                <p class="rating">★★★★★</p>
+                <p class="comment">This website has been a game-changer for my fitness journey. The workout plans and nutritional advice have helped me achieve my health goals. Highly recommended!</p>
+            </div>
+            <div class="review">
+                <p class="name">Narendra Kohli</p>
+                <p class="rating">★★★★★</p>
+                <p class="comment">I love this health and fitness website! The articles are well-researched, and the community is so supportive. It's my go-to resource for staying healthy and fit.</p>
+            </div>
+            <div class="review">
+                <p class="name">Tirth Patel</p>
+                <p class="rating">★★★★</p>
+                <p class="comment">I've tried many fitness websites, but this one stands out. The personalized coaching and support have helped me achieve my weight loss goals. Thank you!</p>
+            </div>
+            <div class="review">
+                <p class="name">Baba Jani</p>
+                <p class="rating">★★★★★</p>
+                <p class="comment">I'm amazed at the positive changes I've seen in my body and mind since joining this website. It's my daily dose of motivation and inspiration.</p>
+            </div>
+            <div class="review">
+                <p class="name">Salman Khan</p>
+                <p class="rating">★★★★★</p>
+                <p class="comment">I've recommended this website to all my Followers. The variety of workouts keeps me motivated, and the supportive community keeps me accountable.</p>
+            </div>
+            <div class="review">
+                <p class="name">Ramesh Kant</p>
+                <p class="rating">★★★★</p>
+                <p class="comment">I've been a member for a year now, and I can't imagine my fitness journey without this website. It has everything I need to maintain a healthy lifestyle.</p>
+            </div>
+        </div>
+        <div class="comment-section">
+            <h2 id="header-text2">Add Your Review</h2>
+            <div id="header-text2-bg"></div>
+            <br><p> </p>
+        <!-- <br><p> </p> -->
+            <form id="review-form">
+                <input type="text" id="user-name" placeholder="Your Name" required>
+                <textarea id="user-comment" placeholder="Your Review" required></textarea>
+                <label for="user-rating">Rating: </label>
+                <select id="user-rating" required>
+                    <option value="1">★</option>
+                    <option value="2">★★</option>
+                    <option value="3">★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="5">★★★★★</option>
+                </select>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </div>
+    <footer id="footer">
+        <a id="footer-header" href="../index.html">
+            <img id="footer-logo" src="../Home/logo.png" alt="">
+            <span id="footer-name">Healthify.in</span>
+        </a>
+        <div id="contact">Contact Us: <a href="mailto:support.healthify.in@coed.svnit.ac.in">support.healthify.in@coed.svnit.ac.in</a></div>
+        <div id="pages">
+            <a href="../index.html" class="footer-menus">Home</a>
+            <a href="../Yoga/yoga.html" class="footer-menus">Yoga</a>
+            <a href="../Meditaion/meditation.html" class="footer-menus">Meditaion</a>
+            <a href="../Diet/diet.html" class="footer-menus">Diet</a>
+            <a href="../About/about.html" class="footer-menus">About Us</a>
+            <a href="../Profile/profile.html" class="footer-menus">Profile</a>
+            <a href="../Plans/plans.html" class="footer-menus">Plans</a>
+            <a href="../FAQ/faq.html" class="footer-menus">FAQs</a>
+            <a href="../FAQ/review.html" class="footer-menus">Review</a>
+        </div>
+        <div id="privacy">
+            <a href="#" class="footer-menus">Privacy Policy</a>
+        </div>
+        <div id="copyright">&copy;All rights are reserved. Team Utkarsha, SVNIT Surat.</div>
+    </footer>
+    <script src="review.js"></script>
+</body>
+</html>

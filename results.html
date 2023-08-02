@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yoga and Diet Plans - Signup Results</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        color: #333;
+        transition: background-color 0.5s ease;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .result-item {
+        margin-bottom: 10px;
+      }
+
+      .result-item label {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .result-item span {
+        font-size: 16px;
+        float: right;
+        padding: 1vw;
+      }
+
+      .highlight {
+        background-color: #ffd700;
+        padding: 5px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      .action-btn {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .action-btn:hover {
+        background-color: #444;
+      }
+
+      .action-btn:focus {
+        outline: none;
+      }
+
+      .action-btn-container {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .thank-you {
+        font-size: 2vw;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 3vw;
+        padding: 1.5vw;
+      }
+
+      .confetti-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .confetti {
+        width: 8px;
+        height: 8px;
+        background-color: #ffd700;
+        position: absolute;
+        opacity: 0;
+        transform: scale(0);
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+        animation: confettiAnimation 3s linear infinite;
+      }
+
+      @keyframes confettiAnimation {
+        0% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(-300px) scale(0);
+        }
+      }
+
+      /* Smoothly show the container when the page loads */
+      body.loaded .container {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+  </head>
+
+  <body>
+    <nav id="nav">
+      <a href="index.html">
+          <div id="logo"><img id="logo-img" src="Home/logo.png" alt=""></div>
+          <div id="name">Healthify.in</div>
+      </a>
+      <a href="index.html" class="menus" id="menu1">Home</a>
+      <a href="Yoga/yoga.html" class="menus" id="menu2">Yoga</a>
+      <a href="Meditaion/meditation.html" class="menus" id="menu3">Meditaion</a>
+      <a href="Diet/diet.html" class="menus" id="menu4">Diet</a>
+      <a href="About/about.html" class="menus" id="menu5">About Us</a>
+      <a href="Profile/profile.html" class="menus" id="menu6">Profile</a>
+      <a href="Plans/plans.html" class="menus" id="menu7">Plans</a>
+      <a href="javascript: toggle_menu();" class="menus" id="menu8"><img src="Home/menu.png" width="20px"></a>
+      <div id="hide-menu-box">
+          <a href="javascript:close_menu()" id="hide-close"><img id="hide-close-img" src="Home/Close.png" alt=""></a>
+          <div id="menu-header">
+              <div id="hide-logo"><img id="hide-logo-img" src="Home/logo.png" alt=""></div>
+              <div id="hide-name">Healthify.in</div>
+          </div>
+          <a href="index.html" class="hide-menus" id="hide-menu1">Home</a>
+          <a href="Yoga/yoga.html" class="hide-menus" id="hide-menu2">Yoga</a>
+          <a href="Meditaion/meditation.html" class="hide-menus" id="hide-menu3">Meditaion</a>
+          <a href="Diet/diet.html" class="hide-menus" id="hide-menu4">Diet</a>
+          <a href="About/about.html" class="hide-menus" id="hide-menu5">About Us</a>
+          <a href="Profile/profile.html" class="hide-menus" id="hide-menu6">Profile</a>
+          <a href="Plans/plans.html" class="hide-menus" id="hide-menu7">Plans</a>
+      </div>
+  </nav>
+    <div class="container">
+      <div class="thank-you">Thank you for signing up!</div>
+      <div class="result-item">
+        <label>Name:</label>
+        <span class="highlight" id="resultName"></span>
+      </div>
+      <div class="result-item">
+        <label>Email:</label>
+        <span class="highlight" id="resultEmail"></span>
+      </div>
+      <div class="result-item">
+        <label>Mobile No.:</label>
+        <span class="highlight" id="resultMobile"></span>
+      </div>
+      <div class="result-item">
+        <label>Age:</label>
+        <span class="highlight" id="resultAge"></span>
+      </div>
+      <div class="result-item">
+        <label>Height (cm):</label>
+        <span class="highlight" id="resultHeight"></span>
+      </div>
+      <div class="result-item">
+        <label>Weight (kg):</label>
+        <span class="highlight" id="resultWeight"></span>
+      </div>
+      <div class="result-item">
+        <label>BMI:</label>
+        <span class="highlight" id="resultBMI"></span>
+      </div>
+      <div class="action-btn-container">
+        <button class="action-btn" onclick="printResults()">Print</button>
+        <a class="action-btn" href="form.html">Back to Form</a>
+        <a class="action-btn" href="index.html">Continue</a>
+      </div>
+      <div class="confetti-container"></div>
+    </div>
+    <footer id="footer">
+      <a id="footer-header" href="index.html">
+          <img id="footer-logo" src="Home/logo.png" alt="">
+          <span id="footer-name">Healthify.in</span>
+      </a>
+      <div id="contact">Contact Us: <a
+              href="mailto:support.healthify.in@coed.svnit.ac.in">support.healthify.in@coed.svnit.ac.in</a></div>
+      <div id="pages">
+          <a href="index.html" class="footer-menus">Home</a>
+          <a href="Yoga/yoga.html" class="footer-menus">Yoga</a>
+          <a href="Meditaion/meditation.html" class="footer-menus">Meditaion</a>
+          <a href="Diet/diet.html" class="footer-menus">Diet</a>
+          <a href="About/about.html" class="footer-menus">About Us</a>
+          <a href="Profile/profile.html" class="footer-menus">Profile</a>
+          <a href="Plans/plans.html" class="footer-menus">Plans</a>
+      </div>
+      <div id="privacy">
+          <a href="#" class="footer-menus">Privacy Policy</a>
+      </div>
+      <div id="copyright">&copy;All rights are reserved. Team Utkarsha, SVNIT Surat.</div>
+  </footer>
+    <script>
+      // Get the query string from the URL
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+
+      // Display the collected data in the results page
+      document.getElementById("resultName").textContent = urlParams.get("name");
+      document.getElementById("resultEmail").textContent =
+        urlParams.get("email");
+      document.getElementById("resultMobile").textContent =
+        urlParams.get("mobile");
+      document.getElementById("resultAge").textContent = urlParams.get("age");
+      document.getElementById("resultHeight").textContent =
+        urlParams.get("height");
+      document.getElementById("resultWeight").textContent =
+        urlParams.get("weight");
+
+      // Calculate and display BMI
+      const weight = parseFloat(urlParams.get("weight"));
+      const height = parseFloat(urlParams.get("height")) / 100; // Convert height from cm to m
+      const bmi = (weight / (height * height)).toFixed(2);
+      document.getElementById("resultBMI").textContent = bmi;
+
+      // Smoothly show the container when the page loads
+      window.onload = function () {
+        document.body.classList.add("loaded");
+      };
+
+      // Print the results
+      function printResults() {
+        window.print();
+      }
+    </script>
+  </body>
+</html>

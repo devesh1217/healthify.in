@@ -157,4 +157,32 @@
         top: 1vw;
         font-size: 5vw;
     }
+    /* about page */
+    .about-us h1{
+        font-size: 6vw;
+    }
+    .about-us p{
+        font-size: 3.3vw;
+    }
+    .creator-details{
+        width: 90%;
+    }
+    #creator{
+        font-size: 6vw;
+    }
+    .creator-details h3{
+        font-size: 5.5vw;
+    }
+    .creator-details a span{
+        font-size: 3.5vw;
+    }
+    #mentor{
+        font-size: 6vw;
+    }
+    .mentor h3{
+        color: black;
+    }
+    .mentor p{
+        color: rgb(23, 23, 23);
+    }
 }

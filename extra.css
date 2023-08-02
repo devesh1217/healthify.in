@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&display=swap');
+*{
+    font-family: 'Anek Devanagari', sans-serif;
+}
+.container {
+    border: 0vw;
+    border-radius: 0%;
+    margin: 1.2vw;
+}
+
+.profile_container {
+    display: flex;
+    padding: 2vw;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 70vh;
+    border-radius: 2vw;
+}
+
+#profilestate {
+    max-width: 50vw;
+    background-color: antiquewhite;
+    margin-right: 6vw;
+    margin-bottom: 4vw;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    border: 0vw;
+    border-radius: 1.5vw;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.2),
+        0 0.6vw 2vw 0 rgba(0, 0, 0, 0.19);
+}
+
+#new {
+    width: 28vw;
+    height: 14vw;
+    border: 1.4vw solid #96e263;
+    border-top-left-radius: 14vw;
+    border-top-right-radius: 14vw;
+    border-bottom: 1.4vw;
+}
+
+.profile_container p {
+    text-align: center;
+    font-size: 2.2vw;
+    font-style: normal;
+    font-display: block;
+    color: rgb(41, 60, 2);
+    margin-top: -5vw;
+}
+
+.profile_container span {
+    border: 0.5vw solid rgb(180, 206, 211);
+    border-radius: 3vw;
+}
+
+.workout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(252, 228, 237, 0.427);
+    border-radius: 2vw;
+    margin-top: 2vw;
+    padding: 2vw;
+    max-width: 1453px;
+}
+
+.workoutstart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1vw;
+    margin: 1vw;
+    background-color: #d7e263c2;
+    border-radius: 2vw;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2.3vw;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.2), 0 0.6vw 2vw 0 rgba(0, 0, 0, 0.19);
+    width: 30%;
+    height: 400px;
+}
+.workoutstart:hover{
+    transform: scale(1.05);
+}
+.workout-img{
+    width: 100%;
+}
+.workout-img img{
+    width: 100%;
+}
+.workouttext {
+    padding: 2vw;
+}
+
+.workout p {
+    font-size: 3vw;
+    color: rgb(47, 1, 33);
+}
+
+#btnjoin {
+    font-size: 2vw;
+    background-color: rgb(250, 228, 255);
+    padding: 1vw;
+    padding-inline: 4vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    border-radius: 3vw;
+    border: none;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.2), 0 0.6vw 2vw 0 rgba(0, 0, 0, 0.19);
+}
+#btnjoin a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.977);
+
+}
+#btnjoin:hover{
+    background-color: rgb(96, 2, 79);
+    color: aliceblue;
+    transition: ease-in;
+    transition-delay: 0.05s;
+}
+#btnjoin:hover a{
+    color: white;
+}
+.material-symbols-rounded {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.meditationSection {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(249, 193, 143, 0.309);
+    margin: 1.2vw;
+    border: 0vw;
+    padding: 2.2vw;
+    border-radius: 1.32vw;
+}
+
+.meditationText h3 {
+    font-size: 4vw;
+    color: rgb(107, 62, 1);
+}
+
+.meditationText p {
+    font-size: 1.6vw;
+    color: rgba(48, 1, 129, 0.935);
+    font-weight: bolder;
+    margin-top: 3vw;
+    margin-left: 5vw;
+}
+
+#btnjoin2 {
+    font-size: 2vw;
+    background-color: rgba(252, 241, 228, 0.583);
+    padding: 1vw;
+    padding-inline: 4vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    border: none;
+    border-radius: 3vw;
+    color: rgba(92, 52, 6, 0.977);
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.2), 0 0.6vw 2vw 0 rgba(0, 0, 0, 0.19);
+}
+#btnjoin2 a{
+    color: rgba(92, 52, 6, 0.977);
+    text-decoration: none;
+}
+#btnjoin2:hover {
+    background-color: rgba(92, 59, 6, 0.977);
+    color: aliceblue;
+    transition: ease-in;
+    transition-delay: 0.05s;
+    box-shadow: 0 0.6vw 1vw rgba(0, 0, 0, 0.3), 0 0.8vw 2.4vw 0 rgba(0, 0, 0, 0.29);
+}
+#btnjoin2:hover a{
+    color: white;
+}

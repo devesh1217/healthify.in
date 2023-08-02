@@ -23,11 +23,7 @@
 #header-text-bg{
     font-size: 100px;
     position: absolute;
-    top: 50vh;
-    right: 10vw;
     background-color: #4dd09ea1;
-    width: 770px;
-    height: 40px;
     z-index: 1;
     border-radius: 40px;
 }
@@ -42,11 +38,7 @@
 #header-text-bg2{
     font-size: 2.5vw;
     position: absolute;
-    top: 74vh;
-    right: 16vw;
     background-color: #f592eba1;
-    width: 550px;
-    height: 20px;
     z-index: 1;
     border-radius: 40px;
 }

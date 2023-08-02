@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Yoga and Diet Plans Signup</title>
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        nav{
+    color: white;
+    position: fixed;
+    top: 0px;
+    background-color: transparent;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    z-index: 10;
+}
+#logo{
+    display: inline;
+    justify-self: start;
+    align-self: stretch;
+    margin: 0.4vw;
+}
+#logo-img{
+    width: 4vw;
+    padding-inline: 0.8vw;
+    float: left;
+    margin-inline: 0.8vw;
+    padding-right: 0;
+    margin-right: 0;
+}
+#name1{
+    display: inline;
+    margin: 0.4vw;
+    padding-inline: 0.8vw;
+    font-size: 2.2vw;
+    border-right: 0.2vw white solid;
+    padding-left: 0;
+    margin-right: 0;
+}
+nav a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.menus{
+    background-color: transparent;
+    color: #afafaf;
+    border: none;
+    cursor: pointer;
+    display: inline;
+    margin-inline: 1.6vw;
+    font-size: 1.33vw;
+    border-bottom: 0.24vw transparent solid;
+    transition: all ease 0.2s;
+}
+
+#menu8{
+    display: none;
+}
+.menus:hover {
+    color: #ffffff;
+    border-bottom: 0.24vw white solid;
+}
+.menus:active {
+    color: #ffffff;
+    border-bottom: 0.24vw white solid;
+}
+#hide-menu-box{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #fff;
+    display: none;
+    padding-inline: 10vw;
+    padding-top: 2vh;
+}
+#hide-menu-box a{
+
+    color: black;
+    font-size: 5vw;
+    padding: 1vh;
+    border-bottom: solid 1vw transparent;
+}
+#hide-menu-box a:hover{
+    border-bottom: solid 1vw black;
+    transform: translateX(1vw);
+}
+#menu-header{
+    clear: both;
+    background-color: black;
+    width: fit-content;
+    padding: 1.5vw;
+    display: flex;
+    align-items: center;
+    border-radius: 6.4vw 0 6.4vw 0;
+    gap: 1.6vw;
+    margin-bottom: 0.8vw;
+}
+#hide-logo-img{
+    width: 12vw;
+}
+#hide-close-img{
+    width: 6vw;
+}
+#hide-name{
+    font-size: 8vw;
+}
+#hide-close{
+    position: relative;
+    float: right;
+    top: 0.5vh;
+    right: 20vw;
+}
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        nav{
+            background-color: black;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            margin-top: 7vw;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 90%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #444;
+        }
+
+        .form-group input[type="submit"]:focus {
+            outline: none;
+        }
+
+        /* Highlight the form fields on focus */
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #008000;
+        }
+
+        /* Display error message for required fields */
+        .error-message {
+            color: #ff0000;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <nav id="nav">
+        <a href="index.html">
+            <div id="logo"><img id="logo-img" src="Home/logo.png" alt=""></div>
+            <div id="name1">Healthify.in</div>
+        </a>
+        <a href="index.html" class="menus" id="menu1">Home</a>
+        <a href="Yoga/yoga.html" class="menus" id="menu2">Yoga</a>
+        <a href="Meditaion/meditation.html" class="menus" id="menu3">Meditaion</a>
+        <a href="Diet/diet.html" class="menus" id="menu4">Diet</a>
+        <a href="About/about.html" class="menus" id="menu5">About Us</a>
+        <a href="Profile/profile.html" class="menus" id="menu6">Profile</a>
+        <a href="Plans/plans.html" class="menus" id="menu7">Plans</a>
+        <a href="javascript: toggle_menu();" class="menus" id="menu8"><img src="Home/menu.png" width="20px"></a>
+        <div id="hide-menu-box">
+            <a href="javascript:close_menu()" id="hide-close"><img id="hide-close-img" src="Home/Close.png" alt=""></a>
+            <div id="menu-header">
+                <div id="hide-logo"><img id="hide-logo-img" src="Home/logo.png" alt=""></div>
+                <div id="hide-name">Healthify.in</div>
+            </div>
+            <a href="index.html" class="hide-menus" id="hide-menu1">Home</a>
+            <a href="Yoga/yoga.html" class="hide-menus" id="hide-menu2">Yoga</a>
+            <a href="Meditaion/meditation.html" class="hide-menus" id="hide-menu3">Meditaion</a>
+            <a href="Diet/diet.html" class="hide-menus" id="hide-menu4">Diet</a>
+            <a href="About/about.html" class="hide-menus" id="hide-menu5">About Us</a>
+            <a href="Profile/profile.html" class="hide-menus" id="hide-menu6">Profile</a>
+            <a href="Plans/plans.html" class="hide-menus" id="hide-menu7">Plans</a>
+        </div>
+    </nav>
+    <div class="container">
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <div class="error-message" id="nameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile No.:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+                <div class="error-message" id="mobileError"></div>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="99" required>
+                <div class="error-message" id="ageError"></div>
+            </div>
+            <div class="form-group">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" min="100" max="250" required>
+                <div class="error-message" id="heightError"></div>
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" min="30" max="300" required>
+                <div class="error-message" id="weightError"></div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Continue">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+
+            // Check for empty required fields and display error messages
+            const errors = {};
+            if (data.name.trim() === '') {
+                errors.name = 'Name is required';
+            }
+            if (data.email.trim() === '') {
+                errors.email = 'Email is required';
+            }
+            if (data.mobile.trim() === '') {
+                errors.mobile = 'Mobile No. is required';
+            }
+            if (data.age.trim() === '') {
+                errors.age = 'Age is required';
+            }
+            if (data.height.trim() === '') {
+                errors.height = 'Height is required';
+            }
+            if (data.weight.trim() === '') {
+                errors.weight = 'Weight is required';
+            }
+
+            // Display error messages or proceed to the results page
+            if (Object.keys(errors).length > 0) {
+                displayErrorMessages(errors);
+            } else {
+                window.location.href = "results.html?" + new URLSearchParams(data).toString();
+            }
+        });
+
+        function displayErrorMessages(errors) {
+            for (const field in errors) {
+                const errorElement = document.getElementById(field + "Error");
+                errorElement.textContent = errors[field];
+            }
+        }
+    </script>
+    <footer id="footer">
+        <a id="footer-header" href="index.html">
+            <img id="footer-logo" src="Home/logo.png" alt="">
+            <span id="footer-name">Healthify.in</span>
+        </a>
+        <div id="contact">Contact Us: <a
+                href="mailto:support.healthify.in@coed.svnit.ac.in">support.healthify.in@coed.svnit.ac.in</a></div>
+        <div id="pages">
+            <a href="index.html" class="footer-menus">Home</a>
+            <a href="Yoga/yoga.html" class="footer-menus">Yoga</a>
+            <a href="Meditaion/meditation.html" class="footer-menus">Meditaion</a>
+            <a href="Diet/diet.html" class="footer-menus">Diet</a>
+            <a href="About/about.html" class="footer-menus">About Us</a>
+            <a href="Profile/profile.html" class="footer-menus">Profile</a>
+            <a href="Plans/plans.html" class="footer-menus">Plans</a>
+        </div>
+        <div id="privacy">
+            <a href="#" class="footer-menus">Privacy Policy</a>
+        </div>
+        <div id="copyright">&copy;All rights are reserved. Team Utkarsha, SVNIT Surat.</div>
+    </footer>
+</body>
+
+</html>

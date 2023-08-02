@@ -1,15 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&display=swap');
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48;
-  position: absolute;
-  top: 90vh;
-  right: 32vw;
-  color: white;
-}
 body{
     margin: 0px;
     /* background-color:  black; */
@@ -24,6 +13,21 @@ main{
     padding-inline: 10vw;
     padding-top: 3vw;
     padding-bottom: 3vw;
+}
+#profile-text-bg{
+    font-size: 100px;
+    position: absolute;
+    top: 115vh;
+    left: 9vw;
+    background-color: #6f84ffa1;
+    width: 32vw;
+    height: 2.2vw;
+    z-index: -1;
+    border-radius: 40px;
+}
+#profile-text{
+    display: inline;
+    font-size: 50px;
 }
 #BMI-bg{
     font-size: 100px;

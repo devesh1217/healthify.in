@@ -19,6 +19,11 @@ window.onload=window.onresize=()=>{
   document.getElementById('BMI-bg').style.left=document.getElementById('BMI').offsetLeft+'px'
   document.getElementById('BMI-bg').style.height=parseFloat(window.getComputedStyle(document.getElementById('BMI')).fontSize)/1.5+'px'
   
+  document.getElementById('profile-text-bg').style.width=document.getElementById('profile-text').offsetWidth+'px'
+  document.getElementById('profile-text-bg').style.top=document.getElementById('profile-text').offsetTop+parseFloat(window.getComputedStyle(document.getElementById('profile-text')).fontSize)/1.5+'px'
+  document.getElementById('profile-text-bg').style.left=document.getElementById('profile-text').offsetLeft+'px'
+  document.getElementById('profile-text-bg').style.height=parseFloat(window.getComputedStyle(document.getElementById('profile-text')).fontSize)/1.5+'px'
+  
   //setting how-to-text and its bg
   document.getElementById('yoga-title-bg').style.width=document.getElementById('yoga-title').offsetWidth+'px'
   document.getElementById('yoga-title-bg').style.top=document.getElementById('yoga-title').offsetTop+parseFloat(window.getComputedStyle(document.getElementById('yoga-title')).fontSize)/1.5+'px'

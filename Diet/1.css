@@ -1,300 +1,343 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&display=swap');
+
+#header-img {
+  width: 100%;
+  opacity: 40%;
+  height: 100vh;
+  padding: 0;
+}
+
+#header-bg {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48;
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
   position: absolute;
   top: 90vh;
   right: 32vw;
   color: white;
 }
-body{
-    margin: 0px;
-    /* background-color:  black; */
-    font-family: 'Anek Devanagari', sans-serif;
-    box-sizing: border-box;
-    background-color: #ffffff;
+
+body {
+  margin: 0px;
+  /* background-color:  black; */
+  font-family: 'Anek Devanagari', sans-serif;
+  box-sizing: border-box;
+  background-color: #ffffff;
 }
-#header-img{
+
+#header-img {
   opacity: 80%;
 }
-#header-text{
-    display: inline;
-    color: white;
-    font-size: 100px;
-    position: absolute;
-    top: 30vh;
-    left: 10vw;
-    z-index: 2;
-}
-#header-text-bg{
-    display: inline;
-    font-size: 100px;
-    position: absolute;
-    top: 40vh;
-    left: 10vw;
-    background-color:rgb(163, 163, 50);
-    width: 520px;
-    height: 40px;
-    z-index: 1;
-    border-radius: 40px;
-}
-#header-text2{
-    display: inline;
-    color: white;
-    font-size: 100px;
-    position: absolute;
-    top: 45vh;
-    left: 10vw;
-    z-index: 2;
-}
-#header-text-bg2{
-    display: inline;
-    font-size: 100px;
-    position: absolute;
-    top: 55vh;
-    left: 10vw;
-    background-color: rgb(163, 163, 50);
-    width: 600px;
-    height: 40px;
-    z-index: 1;
-    border-radius: 40px;
-}
-#header-text3{
-    display: inline;
-    color: white;
-    font-size: 40px;
-    position: absolute;
-    top: 70vh;
-    left: 10vw;
-    z-index: 2;
-}
-#header-text-bg3{
-    display: inline;
-    font-size: 100px;
-    position: absolute;
-    top: 74vh;
-    left: 10vw;
-    /* background-color: #f592eba1; */
-    background-color: rgb(22, 110, 33);
-    width: 535px;
-    height: 20px;
-    z-index: 1;
-    border-radius: 40px;
-}
-#title-1-bg{
-    font-size: 100px;
-    position: absolute;
-    /* background-color: #f592eba1; */
-    background-color: rgba(93, 251, 172, 0.745);
-    width: 535px;
-    height: 20px;
-    z-index: -1;
-    border-radius: 40px;
+
+#header-text {
+  display: inline;
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+  z-index: 2;
 }
 
-.step-text{
-    margin: 1vw;
-    font-size: 1.3vw;
+#header-text-bg {
+  display: inline;
+  position: absolute;
+
+  background-color: rgb(163, 163, 50);
+
+  z-index: 1;
+  border-radius: 40px;
 }
+
+#header-text2 {
+  display: inline;
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 45vh;
+  left: 10vw;
+  z-index: 2;
+}
+
+#header-text-bg2 {
+  display: inline;
+
+  position: absolute;
+
+  background-color: rgb(163, 163, 50);
+
+  z-index: 1;
+  border-radius: 40px;
+}
+
+#header-text3 {
+  display: inline;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 70vh;
+  left: 10vw;
+  z-index: 2;
+}
+
+#header-text-bg3 {
+  display: inline;
+
+  position: absolute;
+
+  /* background-color: #f592eba1; */
+  background-color: rgb(22, 110, 33);
+
+  z-index: 1;
+  border-radius: 40px;
+}
+
+#title-1-bg {
+  font-size: 100px;
+  position: absolute;
+  /* background-color: #f592eba1; */
+  background-color: rgba(93, 251, 172, 0.745);
+  width: 535px;
+  height: 20px;
+  z-index: -1;
+  border-radius: 40px;
+}
+
+.step-text {
+  margin: 1vw;
+  font-size: 1.3vw;
+}
+
 .container1 {
-    /* width: 80vw; */
-    /* max-height: 80vw; */
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-    font-size: 3em;
-  }
-  
-  .search-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  label {
-    margin-right: 10px;
-  }
-  
-  select {
-    margin: 20px;
-    padding: 20px;
-    font-size: 3vh;
-    border-radius: 10px;
-    width: 40vw;
-    /* height: 8vh; */
-  }
-  
-  button {
-    padding: 20px;
-    font-size: 1.5em;
-    border-radius: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 10vw;
-    height: 8vh;
-  }
-  
-  #displayjs {
-      background-color: #BF40BF;
-      border-radius: 15px;
-      width: 90vw;
-      height: 65vh;
-      margin: 0 auto;
-      font-size: 250%;
-  }
-  #nutritionInfo {
-      color: white;
-      padding-top: 0.5%;
-      /* font-size: 30%; */
-  }
-  .flex_container{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-  }
-  .items{
-      width: 180px;
-      height: 180px;
-      background-color: white;
-      text-align: center;
-      border-radius: 10px;
-      margin-top: 5%;
-      
-  }
-  #calories p{
-      color: #BF40BF;
-      font-weight: bold;
-      font-size: 70%;
-      
-  }
-  #protein p{
-      color: #BF40BF;
-      font-weight: bold;
-      font-size: 70%;
-  }
-  #fat p{
-      color: #BF40BF;
-      font-weight: bold;
-      font-size: 70%;
-  }
-  #carbohydrates p{
-      color: #BF40BF;
-      font-weight: bold;
-      font-size: 70%;
-  }
-  .body2 {
-    font-family: Arial, sans-serif;
-    margin-inline: 5%;
-    padding: 5px;
-    display: flex;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-      --s: 50px; /* control the size */
-      --c1:#d3cdffa5;
-      --c2:white;
-      
-      --_g:#0000 17.5%,var(--c1) 18% 35%,var(--c2) 35.5% 39%,#0000 40%;
-      background:
-        radial-gradient(at 100% 0,var(--_g))
-         0       calc(var(--s)/-2)/calc(2*var(--s)) calc(2*var(--s)),
-        radial-gradient(at 0 100%,var(--_g))
-         calc(var(--s)/2) var(--s)/calc(2*var(--s)) calc(2*var(--s)),
-        conic-gradient(#0000 75%,var(--c1) 0) 0 0/var(--s) var(--s) 
-         var(--c2);
-         
-  }
+  /* width: 80vw; */
+  /* max-height: 80vw; */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
 
-  .container2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid #440ff2;
-    border-radius: 10px;
-    background-color:#ffffffc2;
-    /* background-image: url(7.jpg) ; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 90%; /* Adjust width as needed */
-    height: 80vh;
-    
-  }
-  
-  h1 {
-    color: #000000;
-    margin-bottom: 50px;
-    font-size: 65px;
-  }
-  
-  .category-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-  }
-  
-  .category-button {
-    margin: 10px;
-    padding: 8px 16px;
-    font-size: 23px;
-    font-weight: bold;
-    border: none;
-    border-radius: 50px;
-    background-color: transparent;
-    color: #000;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-  }
-  #btn1{
-    background-color: black;
-    color: white;
-  }
-  .category-button:hover {
-    background-color: #b2b2b274;
-    transform: scale(1.1);
-  }
+h1 {
+  margin-bottom: 20px;
+  font-size: 3em;
+}
 
-  
-  .food-and-totals {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
-  }
-  
-  .food-section {
-    flex-basis: 70%;
-    padding-right: 20px;
-  }
-  
-  .food-buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-gap: 10px;
-  }
-  
-  .food-buttons button {
-    margin: 5px;
-    padding: 4px 8px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    background-color: #bfff83;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-  }
-  
-  /* .food-buttons button:nth-child(odd) {
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+select {
+  margin: 20px;
+  padding: 20px;
+  font-size: 3vh;
+  border-radius: 10px;
+  width: 40vw;
+  /* height: 8vh; */
+}
+
+#search {
+  padding: 20px;
+  font-size: 1.7em;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 10vw;
+  height: 10vh;
+}
+
+#displayjs {
+  background-color: #BF40BF;
+  border-radius: 15px;
+  width: 90vw;
+  height: 65vh;
+  margin: 0 auto;
+  font-size: 250%;
+}
+
+#nutritionInfo {
+  color: white;
+  padding-top: 0.5%;
+  /* font-size: 30%; */
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.items {
+  width: 180px;
+  height: 180px;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 5%;
+
+}
+
+#calories p {
+  color: #BF40BF;
+  font-weight: bold;
+  font-size: 70%;
+
+}
+
+#protein p {
+  color: #BF40BF;
+  font-weight: bold;
+  font-size: 70%;
+}
+
+#fat p {
+  color: #BF40BF;
+  font-weight: bold;
+  font-size: 70%;
+}
+
+#carbohydrates p {
+  color: #BF40BF;
+  font-weight: bold;
+  font-size: 70%;
+}
+
+.body2 {
+  font-family: Arial, sans-serif;
+  margin-inline: 5%;
+  padding: 5px;
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  --s: 50px;
+  /* control the size */
+  --c1: #d3cdffa5;
+  --c2: white;
+
+  --_g: #0000 17.5%, var(--c1) 18% 35%, var(--c2) 35.5% 39%, #0000 40%;
+  background:
+    radial-gradient(at 100% 0, var(--_g)) 0 calc(var(--s)/-2)/calc(2*var(--s)) calc(2*var(--s)),
+    radial-gradient(at 0 100%, var(--_g)) calc(var(--s)/2) var(--s)/calc(2*var(--s)) calc(2*var(--s)),
+    conic-gradient(#0000 75%, var(--c1) 0) 0 0/var(--s) var(--s) var(--c2);
+
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #440ff2;
+  border-radius: 10px;
+  background-color: #ffffffc2;
+  /* background-image: url(7.jpg) ; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  /* Adjust width as needed */
+  height: auto;
+
+}
+
+h1 {
+  color: #000000;
+  margin-bottom: 50px;
+  font-size: 65px;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.category-button {
+  margin: 10px;
+  padding: 8px 16px;
+  font-size: 23px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#btn1 {
+  background-color: black;
+  color: white;
+}
+
+.category-button:hover {
+  background-color: #b9b9b974;
+  transform: scale(1.1);
+}
+
+#breakfast:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#lunch:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#dinner:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.food-and-totals {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+
+.food-section {
+  flex-basis: 70%;
+  padding-right: 20px;
+}
+
+.food-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.food-buttons button {
+  margin: 5px;
+  padding: 4px 8px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #bfff83;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* .food-buttons button:nth-child(odd) {
     background-color: #098ef4;
     color: black;
   }
@@ -303,124 +346,147 @@ body{
     background-color: #5faefe;
     color: black;
   } */
-  
-  .food-buttons button.selected {
-    background-color: #82ffd3;
-  }
-  
-  .food-buttons button:hover {
-    background-color: #0746f4;
-    color: white;
-    transform: scale(1.05);
-  }
-  
-  .totals-and-indicators {
-    flex-basis: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .totals {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f7f7f7;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .totals h2 {
-    color: #333;
-    margin-top: 0;
-    font-size: 30px;
-  }
-  
-  .box-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .fat-box,
-  .protein-box,
-  .carbs-box,
-  .calories-box {
-    flex-basis: 23%;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    position: relative;
-  }
-  
-  .indicator {
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ccc;
-    padding: 2px 8px;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    height:1.3vh;
-    width: 4vw;
-  }
-  
-  .good {
-    background-color: #8BC34A; /* Green for "good" amount */
-    color: #fff;
-  }
-  
-  .moderate {
-    background-color: #FFC107; /* Yellow for "moderate" amount */
-    color: #fff;
-  }
-  
-  .high {
-    background-color: #FF5722; /* Red for "high" amount */
-    color: #fff;
-  }
-  
-  .fat-box {
-    background-color: #e640ff;
-  }
-  
-  .protein-box {
-    background-color: #6512ff;
-  }
-  
-  .carbs-box {
-    background-color: #1399ff;
-  }
-  
-  .calories-box {
-    background-color: #ff590c;
-  }
-  
-  .box-label {
-    font-weight: bold;
-    color: #fff;
-  }
-  
-  .box-value {
-    font-weight: normal;
-    font-size: 24px;
-    color: #fff;
-  }
-  
-  .selected-items {
-    width: 100%;
-  }
-  
-  .selected-items h3 {
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .selected-items div {
-    margin-bottom: 5px;
-    padding: 5px 10px;
-    background-color: #f7f7f7;
-    border-radius: 5px;
-  }
+
+
+.food-buttons button.selected {
+  background-color: #82ffd3;
+}
+
+.food-buttons button:hover {
+  background-color: #0746f4;
+  color: white;
+  transform: scale(1.05);
+}
+
+.totals-and-indicators {
+  flex-basis: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.totals {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.totals h2 {
+  color: #333;
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fat-box,
+.protein-box,
+.carbs-box,
+.calories-box {
+  flex-basis: 23%;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+.indicator {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ccc;
+  padding: 2px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  height: 1.3vh;
+  width: 4vw;
+}
+
+.good {
+  background-color: #8BC34A;
+  /* Green for "good" amount */
+  color: #fff;
+}
+
+.moderate {
+  background-color: #FFC107;
+  /* Yellow for "moderate" amount */
+  color: #fff;
+}
+
+.high {
+  background-color: #FF5722;
+  /* Red for "high" amount */
+  color: #fff;
+}
+
+.fat-box {
+  background-color: #e640ff;
+}
+
+.protein-box {
+  background-color: #6512ff;
+}
+
+.carbs-box {
+  background-color: #1399ff;
+}
+
+.calories-box {
+  background-color: #ff590c;
+}
+
+.box-label {
+  font-weight: bold;
+  color: #fff;
+}
+
+.box-value {
+  font-weight: normal;
+  font-size: 24px;
+  color: #fff;
+}
+
+.selected-items {
+  width: 100%;
+  height: auto;
+}
+
+.selected-items h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.selected-items div {
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+/* ::-webkit-scrollbar {
+  width: 16px;
+} */
+
+/* ::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 15px;
+} */
+
+#menu4 {
+  border-bottom: 0.24vw white solid;
+  color: white;
+}

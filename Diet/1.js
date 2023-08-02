@@ -274,32 +274,32 @@ const foodData = {
     { name: "Mixed Fruit Salad", fat: 1, protein: 2, carbs: 35, calories: 120 },
   ],
   lunch: [
-    { name: "Dal Makhani with Rice", fat: 10, protein: 8, carbs: 35, calories: 320 },
-    { name: "Vegetable Biryani", fat: 12, protein: 6, carbs: 50, calories: 360 },
+    { name: "Mixed Vegetable Biryani", fat: 12, protein: 6, carbs: 50, calories: 360 },
+    { name: "Dal Makhani", fat: 10, protein: 8, carbs: 40, calories: 300 },
     { name: "Aloo Gobi", fat: 8, protein: 4, carbs: 30, calories: 180 },
-    { name: "Paneer Butter Masala with Naan", fat: 15, protein: 10, carbs: 40, calories: 380 },
+    {  name: "Jeera Rice", fat: 6, protein: 8, carbs: 35, calories: 220 },
     { name: "Palak Paneer", fat: 12, protein: 8, carbs: 25, calories: 280 },
-    { name: "Matar Paneer with Jeera Rice", fat: 10, protein: 8, carbs: 40, calories: 340 },
-    { name: "Bhindi Masala with Roti", fat: 8, protein: 4, carbs: 30, calories: 220 },
     { name: "Rajma Chawal", fat: 8, protein: 6, carbs: 45, calories: 340 },
-    { name: "Vegetable Pulao", fat: 7, protein: 5, carbs: 40, calories: 290 },
-    { name: "Spinach and Potato Curry", fat: 6, protein: 4, carbs: 30, calories: 220 },
-    { name: "Aloo Matar with Roti", fat: 7, protein: 5, carbs: 30, calories: 240 },
-    { name: "Vegetable Kadhi with Jeera Rice", fat: 8, protein: 6, carbs: 35, calories: 290 },
+    { name: "Bhindi Masala", fat: 5, protein: 4, carbs: 25, calories: 150 },
+    { name: "Salad with Mixed Greens", fat: 4, protein: 6, carbs: 10, calories: 80 },
+    { name: "Aloo Matar", fat: 7, protein: 5, carbs: 30, calories: 240 },
+    { name: "Green Vegetable Pulao", fat: 7, protein: 5, carbs: 40, calories: 290 },
+    { name: "Vegetable Kadhi", fat: 8, protein: 6, carbs: 35, calories: 290 },
+    { name: "Roti", fat: 5, protein: 3, carbs: 20, calories: 120 },
   ],
   dinner: [
     { name: "Vegetable Fried Rice", fat: 8, protein: 4, carbs: 40, calories: 280 },
-    { name: "Paneer Tikka Masala with Naan", fat: 14, protein: 8, carbs: 30, calories: 320 },
-    { name: "Dum Aloo with Jeera Rice", fat: 10, protein: 6, carbs: 40, calories: 300 },
-    { name: "Vegetable Korma with Roti", fat: 12, protein: 6, carbs: 35, calories: 310 },
-    { name: "Dal Tadka with Rice", fat: 7, protein: 6, carbs: 30, calories: 240 },
-    { name: "Aloo Paratha with Raita", fat: 10, protein: 6, carbs: 40, calories: 320 },
-    { name: "Mushroom Matar with Roti", fat: 8, protein: 5, carbs: 35, calories: 270 },
-    { name: "Vegetable Biryani", fat: 12, protein: 6, carbs: 50, calories: 360 },
-    { name: "Mixed Dal with Jeera Rice", fat: 6, protein: 8, carbs: 30, calories: 270 },
-    { name: "Vegetable Pulao", fat: 7, protein: 5, carbs: 40, calories: 290 },
-    { name: "Cauliflower Curry with Roti", fat: 6, protein: 4, carbs: 30, calories: 230 },
-    { name: "Aloo Baingan with Roti", fat: 5, protein: 4, carbs: 25, calories: 200 },
+    { name: "Jeera Rice", fat: 6, protein: 8, carbs: 35, calories: 220 },
+    { name: "Vegetable Korma", fat: 12, protein: 6, carbs: 35, calories: 310 },
+    { name: "Baingan Bharta", fat: 8, protein: 6, carbs: 30, calories: 180 },
+    { name: "Paratha", fat: 10, protein: 12, carbs: 30, calories: 320 },
+    { name: "Pizza", fat: 14, protein: 10, carbs: 30, calories: 380 },
+    { name: "Paneer Tikka Masala", fat: 12, protein: 15, carbs: 20, calories: 280 },
+    { name: "Palak Paneer", fat: 8, protein: 6, carbs: 35, calories: 220 },
+    { name: "Khichadi", fat: 10, protein: 8, carbs: 40, calories: 300 },
+    { name: "Vegetable Curry", fat: 8, protein: 6, carbs: 25, calories: 140 },
+    { name: "Roti", fat: 5, protein: 3, carbs: 20, calories: 120 },
+    { name: " Mixed Vegetable biryani", fat: 12, protein: 6, carbs: 50, calories: 360 },
   ],
 };
 
@@ -312,6 +312,29 @@ const selectedItems = {
 
 // Function to show food items of a particular category
 function showCategory(category) {
+  
+  if(category=='breakfast'){
+    document.getElementById('breakfast').style.backgroundColor='black';
+    document.getElementById('lunch').style.backgroundColor='transparent';
+    document.getElementById('dinner').style.backgroundColor='transparent';
+    document.getElementById('breakfast').style.color='white';
+    document.getElementById('lunch').style.color='black';
+    document.getElementById('dinner').style.color='black';
+  } else if(category=='lunch'){
+    document.getElementById('lunch').style.backgroundColor='black';
+    document.getElementById('breakfast').style.backgroundColor='transparent';
+    document.getElementById('dinner').style.backgroundColor='transparent';
+    document.getElementById('lunch').style.color='white';
+    document.getElementById('breakfast').style.color='black';
+    document.getElementById('dinner').style.color='black';
+  } else if(category=='dinner'){
+    document.getElementById('dinner').style.backgroundColor='black';
+    document.getElementById('lunch').style.backgroundColor='transparent';
+    document.getElementById('breakfast').style.backgroundColor='transparent';
+    document.getElementById('dinner').style.color='white';
+    document.getElementById('lunch').style.color='black';
+    document.getElementById('breakfast').style.color='black';
+  } 
   const foodButtonsDiv = document.getElementById("foodButtons");
   foodButtonsDiv.innerHTML = "";
 
@@ -332,7 +355,7 @@ function showCategory(category) {
       button.classList.add("selected");
     }
   });
-
+  
   updateTotals(category);
   updateIndicatorsAndSelectedItems(category);
 }
@@ -345,8 +368,7 @@ function selectFoodItem(button, category) {
   // Add or remove the selected item from the respective category's set
   if (button.classList.contains("selected")) {
     selectedItems[category].add(foodName);
-  } else {
-    selectedItems[category].delete(foodName);
+  } else {selectedItems[category].delete(foodName);
   }
 
   updateTotals(category);
@@ -453,6 +475,7 @@ function updateIndicatorsAndSelectedItems(category) {
     selectedItemsDiv.appendChild(itemDiv);
   });
 }
+
 
 // Show the default category (breakfast) when the page loads
 showCategory("breakfast");

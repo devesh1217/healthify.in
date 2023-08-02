@@ -31,10 +31,11 @@
     padding: 2vw;
     flex-direction: column;
     align-items: center;
-    top: 8vh;
+    top: 6vh;
     background-color: #fffefe;
     border-radius: 1vw;
     border: 2px solid black;
+    box-shadow: 0 0.6vw 1vw rgba(0, 0, 0, 0.3),0 0.8vw 2.4vw 0 rgba(0, 0, 0, 0.29);
 }
 #login-menu-header{
     text-decoration: none;
@@ -73,7 +74,7 @@
 }
 #login-box fieldset{
     z-index: 200;
-    margin: 1vw;
+    margin: 0.4vw;
     width: 70%;
     padding: 0;
     border-radius: 10px;
@@ -99,7 +100,7 @@
     background-color: transparent;
     border: none;
     font-size: 1.3vw;
-    margin: 1vw;
+    margin: 0.4vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,8 +110,8 @@
 }
 
 #login-box button:hover{
-    z-index: 200;
-    background-color: #9fe6f8;
+    background-color: black;
+    color: white;
 }
 #login-box button:active{
     z-index: 200;
@@ -130,4 +131,11 @@
     z-index: 200;
     text-decoration: none;
     color: initial;
+}
+#login-btns{
+    display: flex;
+}
+#login-btns button{
+    padding: 0.5vw;
+
 }

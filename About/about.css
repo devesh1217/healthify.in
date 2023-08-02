@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&display=swap');
+body{
+    margin: 0px;
+    /* background-color:  black; */
+    font-family: 'Anek Devanagari', sans-serif;
+    box-sizing: border-box;
+}
+main{
+    padding-inline: 10vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+nav{
+    background-color: black;
+}
+.about-us{
+    margin-top: 5vw;
+}
+.about-us h1{
+    display: inline;
+    font-size: 4vw;
+    margin: 0;
+}
+#about-bg{
+    font-size: 100px;
+    position: absolute;
+    background-color: #a46af080;
+    z-index: -1;
+    border-radius: 40px;
+}
+.about-us p{
+    font-size: 1.2vw;
+}
+.creator {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+#creator{
+    text-align: center;
+    display: inline;
+    font-size: 3vw;
+}
+.creater-title{
+    text-align: center;
+}
+#creator-bg{
+    font-size: 100px;
+    position: absolute;
+    background-color: #3a97de80;
+    z-index: -1;
+    border-radius: 40px;
+}
+#creator-1{
+    background-color: #ffb2ad6a;
+}
+#creator-2{
+    background-color: #fff7c16a;
+}
+#creator-3{
+    background-color: #c1ffc26a;
+}
+.creator-details {
+width: 25%;
+margin-bottom: 30px;
+border: 1px solid #ccc;
+border-radius: 8px;
+padding: 20px;
+background-color: #f9f9f9;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+.creator-details:hover {
+    transform: translateY(-5px);
+box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+.creator-details a{
+    text-decoration: none;
+    color: initial;
+    display: flex;
+}
+#insta{
+    width: 30px;
+    padding: 10px;
+}
+#linkedin{
+    width: 30px;
+    padding: 10px;
+
+}
+.creator-details span{
+    font-size: 1.3vw;
+    padding: 10px;
+}
+.creator-details h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.creator-details p {
+    color: #666;
+}
+#mentor{
+    display: inline;
+    font-size: 3vw;
+}
+#mentor-bg{
+    font-size: 100px;
+    position: absolute;
+    background-color: #de793a80;
+    z-index: -1;
+    border-radius: 40px;
+}
+.mentor {
+text-align: center;
+margin-top: 40px;
+margin-bottom: 4vw;
+}
+
+.mentor img {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+border: 4px solid #fff;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+.mentor img:hover {
+transform: rotate(360deg);
+}
+
+.mentor h3 {
+font-size: 24px;
+color: #333;
+margin-top: 20px;
+}
+
+.mentor p {
+color: #666;
+max-width: 600px;
+margin: 0 auto;
+}
+#menu5{
+    border-bottom: 0.24vw white solid;
+    color: white;
+}

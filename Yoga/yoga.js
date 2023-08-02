@@ -91,70 +91,80 @@ let beginerData = [
     link: "Beginer/b1.jpg",
     description: "Downward Facing Dog",
     pose: 'Standing',
-    no:'beginer-1'
+    no: 'beginer-1',
+    benefit: "Stretches and strengthens the entire body, improves blood circulation, energizes the mind, and relieves stress and anxiety."
   },
   {
     name: "Tadasana",
     link: "Beginer/b2.jpg",
-    description: "Mountain pose",
+    description: "Mountain Pose",
     pose: 'Standing',
-    no:'beginer-2'
+    no: 'beginer-2',
+    benefit: "Improves posture, strengthens the thighs and ankles, increases awareness and balance, and promotes steady breathing."
   },
   {
     name: "Virabhadrasana",
     link: "Beginer/b3.jpg",
     description: "Warrior Pose",
     pose: 'Standing',
-    no:'beginer-3'
+    no: 'beginer-3',
+    benefit: "Builds strength and stamina, stretches the chest and lungs, improves concentration, and develops core stability."
   },
   {
     name: "Trikonasana",
     link: "Beginer/b4.jpg",
     description: "Triangle Pose",
     pose: 'Standing',
-    no:'beginer-4'
+    no: 'beginer-4',
+    benefit: "Stretches and strengthens the legs, hips, and spine, improves digestion, and stimulates abdominal organs."
   },
   {
     name: "PadaHastasana",
     link: "Beginer/b5.jpg",
-    description: "Hand-to-foot pose",
+    description: "Hand-to-Foot Pose",
     pose: 'Standing',
-    no:'beginer-5'
+    no: 'beginer-5',
+    benefit: "Stimulates blood circulation in the upper body, stretches the hamstrings and calves, and helps relieve mild anxiety."
   },
   {
     name: "Vrikshasana",
     link: "Beginer/b6.webp",
-    description: "Tree pose",
+    description: "Tree Pose",
     pose: 'Standing',
-    no:'beginer-6'
+    no: 'beginer-6',
+    benefit: "Improves balance and concentration, strengthens the legs and ankles, and opens the hips and chest."
   },
   {
     name: "Bhujangasan",
     link: "Beginer/b7.jpg",
     description: "Cobra Pose",
     pose: 'Prone',
-    no:'beginer-7'
+    no: 'beginer-7',
+    benefit: "Stretches the chest and shoulders, strengthens the spine, stimulates abdominal organs, and may help alleviate back pain."
   },
   {
     name: "Sukhasana",
     link: "Beginer/b8.jpg",
     description: "Easy Pose",
     pose: 'Seated',
-    no:'beginer-8'
+    no: 'beginer-8',
+    benefit: "Promotes inner calm and relaxation, opens the hips, lengthens the spine, and helps in meditation."
   },
   {
     name: "Padmasana",
     link: "Beginer/b9.jpg",
-    description: "Lotus pose",
+    description: "Lotus Pose",
     pose: 'Seated',
-    no:'beginer-9'
+    no: 'beginer-9',
+    benefit: "Encourages good posture, increases flexibility in the hips and knees, and calms the mind for meditation."
   },
   {
     name: "Shavasana",
     link: "Beginer/b10.jpg",
     description: "Corpse Pose",
     pose: 'Supine',
-    no:'beginer-10'
+    no: 'beginer-10',
+    benefit: "Relaxes the body and mind, reduces stress, lowers blood pressure, and allows for integration and rest after yoga practice."
   },
 ];
 
@@ -372,6 +382,7 @@ function display(arr){
         if(filterBtns[filterBtns.length-1].checked){
             let newNode=document.createElement('span')
             newNode.innerHTML='<div class="items" id="item'+count+'"><h2>'+count+'. '+ele.name+'<button class="fav-btn" id="'+ele.no+'">'+icon+'</button></h2><img '+w+' src="'+ele.link+'" alt=""><h3>'+ele.description+'</h3></div>'
+            console.log(ele.benefit);
             yogaDisplayBox.appendChild(newNode)
             count++
             continue
