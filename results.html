@@ -2,17 +2,23 @@
 <html>
   <head>
     <title>Yoga and Diet Plans - Signup Results</title>
+    <link rel="stylesheet" href="nav.css">
     <style>
+      
       body {
         font-family: Arial, sans-serif;
         background-color: #f7f7f7;
         color: #333;
         transition: background-color 0.5s ease;
+        margin: 0;
       }
-
+      nav{
+        background-color: black;
+      }
       .container {
         max-width: 500px;
         margin: 50px auto;
+        margin-top: 8vw;
         padding: 20px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -20,7 +26,6 @@
         opacity: 0;
         transform: translateY(20px);
         transition: opacity 0.5s ease, transform 0.5s ease;
-        height: 70vh;
         display: flex;
         flex-direction: column;
       }
@@ -113,7 +118,7 @@
         transform: translateY(0);
       }
     </style>
-    <link rel="stylesheet" href="nav.css">
+    
     <link rel="stylesheet" href="footer.css">
   </head>
 
@@ -179,7 +184,7 @@
       <div class="action-btn-container">
         <button class="action-btn" onclick="printResults()">Print</button>
         <a class="action-btn" href="form.html">Back to Form</a>
-        <a class="action-btn" href="index.html">Continue</a>
+        <a class="action-btn" href="index.html" onclick="login();">Continue</a>
       </div>
       <div class="confetti-container"></div>
     </div>
@@ -235,6 +240,10 @@
       // Print the results
       function printResults() {
         window.print();
+      
+      function login(){
+        localStorage.setItem('flag',JSON.stringify(1));
+      }
       }
     </script>
   </body>

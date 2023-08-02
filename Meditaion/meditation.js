@@ -117,4 +117,5 @@ function changetext() {
 function showSubscriptionPopup() {
     alert("Thank you for using our meditation service. Subscribe now for premium benefits!");
     subscriptionPopupShown = true;
+    window.location="../Plans/plans.html"
 }

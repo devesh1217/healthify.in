@@ -33,10 +33,10 @@ document.getElementById("review-form").addEventListener("submit", function(event
     document.getElementById("user-comment").value = "";
     document.getElementById("user-rating").value = "1";
     
-    document.getElementById('header-text-bg1').style.width=document.getElementById('header-text1').offsetWidth+'px'
-    document.getElementById('header-text-bg1').style.top=document.getElementById('header-text1').offsetTop+parseFloat(window.getComputedStyle(document.getElementById('header-text1')).fontSize)/1.5+'px'
-    document.getElementById('header-text-bg1').style.left=document.getElementById('header-text1').offsetLeft+'px'
-    document.getElementById('header-text-bg1').style.height=parseFloat(window.getComputedStyle(document.getElementById('header-text1')).fontSize)/2+'px'
+    document.getElementById('header-text2-bg').style.width=document.getElementById('header-text2').offsetWidth+'px'
+    document.getElementById('header-text2-bg').style.top=document.getElementById('header-text2').offsetTop+parseFloat(window.getComputedStyle(document.getElementById('header-text2')).fontSize)/1.5+'px'
+    document.getElementById('header-text2-bg').style.left=document.getElementById('header-text2').offsetLeft+'px'
+    document.getElementById('header-text2-bg').style.height=parseFloat(window.getComputedStyle(document.getElementById('header-text2')).fontSize)/2+'px'
 });
 window.onload=window.onresize=()=>{
     //setting how-to-text and its bg

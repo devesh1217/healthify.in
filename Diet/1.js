@@ -425,10 +425,10 @@ function selectFoodItem(button, category) {
     const carbsBox = document.querySelector(".carbs-box");
     const caloriesBox = document.querySelector(".calories-box");
   
-    const goodFat = 50;
-    const goodProtein = 50;
-    const goodCarbs = 100;
-    const goodCalories = 2500;
+    const goodFat = 18;
+    const goodProtein = 20;
+    const goodCarbs = 50;
+    const goodCalories = 800;
   
     updateIndicator(fatBox, totalFat, goodFat);
     updateIndicator(proteinBox, totalProtein, goodProtein);

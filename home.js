@@ -40,7 +40,5 @@ window.onload=window.onresize=()=>{
   document.getElementById('header-bg').style.width=document.getElementById('header-img').offsetWidth+'px'
   document.getElementById('header-bg').style.height=document.getElementById('header-img').offsetHeight+'px'
   
-  //setting yoga box height
-  document.getElementById('yoga-bg').style.height=document.getElementById('yoga-box').offsetHeight+20+'px'
 
 }
