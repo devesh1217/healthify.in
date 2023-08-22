@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health, Fitness and more</title>
+    <link rel="shortcut icon" href="Home/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="slide.css">
+    <link rel="stylesheet" href="extra.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+    <nav id="nav">
+        <a href="index.html">
+            <div id="logo"><img id="logo-img" src="Home/logo.png" alt=""></div>
+            <div id="name">Healthify.in</div>
+        </a>
+        <a href="index.html" class="menus" id="menu1">Home</a>
+        <a href="Yoga/yoga.html" class="menus" id="menu2">Yoga</a>
+        <a href="Meditaion/meditation.html" class="menus" id="menu3">Meditaion</a>
+        <a href="Diet/diet.html" class="menus" id="menu4">Diet</a>
+        <a href="About/about.html" class="menus" id="menu5">About Us</a>
+        <a href="Profile/profile.html" class="menus" id="menu6">Profile</a>
+        <a href="Plans/plans.html" class="menus" id="menu7">Plans</a>
+        <a href="../FAQ/faq.html" class="menus" id="menu9" >FAQs</a>
+      <a href="../FAQ/review.html" class="menus" id="menu10" >Review</a>
+        <a href="javascript: toggle_menu();" class="menus" id="menu8"><img src="Home/menu.png" width="20px"></a>
+        <div id="hide-menu-box">
+            <a href="javascript:close_menu()" id="hide-close"><img id="hide-close-img" src="Home/Close.png" alt=""></a>
+            <div id="menu-header">
+                <div id="hide-logo"><img id="hide-logo-img" src="Home/logo.png" alt=""></div>
+                <div id="hide-name">Healthify.in</div>
+            </div>
+            <a href="index.html" class="hide-menus" id="hide-menu1">Home</a>
+            <a href="Yoga/yoga.html" class="hide-menus" id="hide-menu2">Yoga</a>
+            <a href="Meditaion/meditation.html" class="hide-menus" id="hide-menu3">Meditaion</a>
+            <a href="Diet/diet.html" class="hide-menus" id="hide-menu4">Diet</a>
+            <a href="About/about.html" class="hide-menus" id="hide-menu5">About Us</a>
+            <a href="Profile/profile.html" class="hide-menus" id="hide-menu6">Profile</a>
+            <a href="Plans/plans.html" class="hide-menus" id="hide-menu7">Plans</a>
+            <a href="../FAQ/faq.html" class="hide-menus" id="hide-menu7" >FAQs</a>
+            <a href="../FAQ/review.html" class="hide-menus" id="hide-menu7" >Review</a>
+        </div>
+    </nav>
+    <header>
+        <img src="Home/header.jpg" id="header-img"></img>
+        <div id="header-bg"></div>
+        <div id="header-text">Health is Wealth</div>
+        <div id="header-text-bg"></div>
+        <div id="header-text2">But how to become wealthy?</div>
+        <div id="header-text-bg2"></div>
+    </header>
+    <main>
+        <h1 id="motivate">Let's Motivate</h1>
+        <div id="motivate-bg">
+    </main>
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="Quotes/Home/img1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="Quotes/Home/img2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="Quotes/Home/img3.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <main>
+        <h1 id="how-to">How to become healthy?</h1>
+        <div id="ans-of-how-to">
+            Yes, You can also become healthy.<br>What you need is just to follow the following steps consistently with
+            determination and a positive thinking.
+        </div>
+        <div id="how-to-bg"></div>
+    </main>
+    <div id="steps">
+        <a class="step" id="step1" href="index.html">
+            <img src="Home/Determination.jpeg" alt="" class="step-img">
+            <span class="step-no" id="step-no-1">1</span>
+            <h2 class="step-title">Determination</h2>
+            <div class="step-text">Firmly determine your health goal and keep on that. Your health is in your hands
+                only.</div>
+        </a>
+        <a class="step" id="step2" href="#">
+            <img src="Home/Diet.jpeg" alt="" class="step-img">
+            <span class="step-no" id="step-no-2">2</span>
+            <h2 class="step-title">Proper Diet</h2>
+            <div class="step-text">Have proper diet that suits your body nature and helps you to stay healthy.</div>
+        </a>
+        <a class="step" id="step3" href="Yoga/yoga.html">
+            <img src="Home/Yoga.jpg" alt="" class="step-img">
+            <span class="step-no" id="step-no-3">3</span>
+            <h2 class="step-title">Exercise/Yoga</h2>
+            <div class="step-text">Physical exercises like Yoga are basic and most important step to become fit.</div>
+        </a>
+        <a class="step" id="step4" href="#">
+            <img src="Home/Meditaion.jpg" alt="" class="step-img">
+            <span class="step-no" id="step-no-4">4</span>
+            <h2 class="step-title">Meditaion</h2>
+            <div class="step-text">Health is not only about physical fitness. Meditaion is the best mental medicine.
+            </div>
+        </a>
+        <a class="step" id="step5" href="Profile/profile.html">
+            <img src="Home/happiness.webp" alt="" class="step-img">
+            <span class="step-no" id="step-no-5">5</span>
+            <h2 class="step-title">Stay Happy</h2>
+            <div class="step-text">Everything is worthless unless you are happy. Stay happy and enjoy your life.</div>
+        </a>
+    </div>
+
+    <div class="workout">
+        <div class="workouttext">
+            <p>START Your Workout Today With US</p><button id="btnjoin"><a href="#">Join Us</a></button>
+        </div>
+        <div class="workoutstart">
+            <div class="workout-img"><img src="Home/fatman-removebg-preview.png" width="300vw"></div><span
+                class="workout-name">Beginner</span>
+        </div>
+        <div class="workoutstart" id="w2">
+            <div class="workout-img"><img src="Home/normalMan-removebg-preview.png" width="300vw"></div><span
+                class="workout-name">Intermediate</span>
+        </div>
+        <div class="workoutstart">
+            <div class="workout-img"><img src="Home/muscler_man-removebg-preview.png" width="300vw"></div><span
+                class="workout-name">Advance</span>
+        </div>
+    </div>
+
+    <div class="meditationSection">
+        <div class="meditationText">
+            <h3>Wanna Improve Your Health ?<br>Start Meditation Today</h3>
+            <button id="btnjoin2"><a href="Meditation/meditation.html">Start Now</a></button>
+        </div>
+        <div class="meditationImg">
+            <img src="Meditaion/yogaman.png" width="400vw">
+        </div>
+    </div>
+    </div>
+
+    <footer id="footer">
+        <a id="footer-header" href="index.html">
+            <img id="footer-logo" src="Home/logo.png" alt="">
+            <span id="footer-name">Healthify.in</span>
+        </a>
+        <div id="contact">Contact Us: <a
+                href="mailto:support.healthify.in@coed.svnit.ac.in">support.healthify.in@coed.svnit.ac.in</a></div>
+        <div id="pages">
+            <a href="index.html" class="footer-menus">Home</a>
+            <a href="Yoga/yoga.html" class="footer-menus">Yoga</a>
+            <a href="Meditaion/meditation.html" class="footer-menus">Meditaion</a>
+            <a href="Diet/diet.html" class="footer-menus">Diet</a>
+            <a href="About/about.html" class="footer-menus">About Us</a>
+            <a href="Profile/profile.html" class="footer-menus">Profile</a>
+            <a href="Plans/plans.html" class="footer-menus">Plans</a>
+            <a href="FAQ/faq.html" class="footer-menus">FAQs</a>
+            <a href="FAQ/review.html" class="footer-menus">Review</a>
+        </div>
+        <div id="privacy">
+            <a href="#" class="footer-menus">Privacy Policy</a>
+        </div>
+        <div id="copyright">&copy;All rights are reserved. Team Utkarsha, SVNIT Surat.</div>
+    </footer>
+    <script src="home.js"></script>
+    <script src="slide.js"></script>
+</body>
+
+</html>

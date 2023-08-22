@@ -40,7 +40,8 @@ function login() {
 
     // If login is successful, you can redirect the user to the dashboard or other pages
     // For example: window.location.href = 'dashboard.html';
-    alert('Login successful. Redirecting to the dashboard...');
+    // alert('Login successful. Redirecting to the dashboard...');
+    window.location="indx.html";
 }
 
 // Attach the sign-up function to a button click (you should have a "Sign Up" button in your HTML)

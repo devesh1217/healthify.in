@@ -87,7 +87,7 @@ let warmupData=[{
 //beginer data
 let beginerData = [
   {
-    name: "Adho Mukha Svanasana",
+    name: "Adho Mukh Svanasan",
     link: "Beginer/b1.jpg",
     description: "Downward Facing Dog",
     pose: 'Standing',
